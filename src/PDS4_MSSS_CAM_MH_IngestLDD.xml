@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1D00_1730.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Ingest_LDD 
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:img="http://pds.nasa.gov/pds4/img/v1"
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"    
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd    
+                        http://pds.nasa.gov/pds4/img/v1 https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1D00_1730.xsd">
+
+  <name>MSSS Camera Mini-header</name>
+  <ldd_version_id>1.0.0.0</ldd_version_id>
+  <full_name>Trent Hare</full_name>
+  <steward_id>img</steward_id>
+  <namespace_id>msss_cam_mh</namespace_id>
+  <comment>
+    ## CHANGE LOG ##
+    1.0.0.0
+    - Initial version
+
+  </comment>
+  <last_modification_date_time>2020-05-15T13:17:00</last_modification_date_time>
+
+  <!-- Begin attribute definitions -->
+
+  <!-- Start attributes for MSSS_Camera_Mini_Header -->
+  <DD_Attribute>
+    <name>camera_product_id</name>
+    <version_id>1.0</version_id>
+    <local_identifier>camera_product_id</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Trent Hare</submitter_name>
+    <definition>TBD</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_NonNegative_Integer</value_data_type>
+      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
+    <name>magic_initial</name>
+    <version_id>1.0</version_id>
+    <local_identifier>magic_initial</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Trent Hare</submitter_name>
+    <definition>TBD</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
+    <name>magic_final</name>
+    <version_id>1.0</version_id>
+    <local_identifier>magic_final</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Trent Hare</submitter_name>
+    <definition>TBD</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>  
+
+  <DD_Attribute>
+    <name>spacecraft_clock_start</name>
+    <version_id>1.0</version_id>
+    <local_identifier>spacecraft_clock_start</local_identifier>
+    <nillable_flag>true</nillable_flag>
+    <submitter_name>Trent Hare</submitter_name>
+    <definition>The spacecraft_clock_start is the value of the spacecraft clock at the beginning of the observation.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+      <formation_rule>Value should be of the form: nnnnnnnnn.mmm</formation_rule>
+      <minimum_characters>1</minimum_characters>
+      <maximum_characters>255</maximum_characters>
+    </DD_Value_Domain>
+  </DD_Attribute>
+  
+  <DD_Attribute>
+    <name>spacecraft_clock_stop</name>
+    <version_id>1.0</version_id>
+    <local_identifier>spacecraft_clock_stop</local_identifier>
+    <nillable_flag>true</nillable_flag>
+    <submitter_name>Trent Hare</submitter_name>
+    <definition>The spacecraft_clock_stop is the value of the spacecraft clock at the end of the observation.
+      spacecraft_clock_stop should only be used if there's also a spacecraft_clock_start value.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+      <formation_rule>Value should be of the form: nnnnnnnnn.mmm</formation_rule>
+      <minimum_characters>1</minimum_characters>
+      <maximum_characters>255</maximum_characters>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
+    <name>instrument_mode_id</name>
+    <version_id>1.0</version_id>
+    <local_identifier>instrument_mode_id</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Trent Hare</submitter_name>
+    <definition>TBD</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>  
+
+  <DD_Attribute>
+    <name>initial_size</name>
+    <version_id>1.0</version_id>
+    <local_identifier>initial_size</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Trent Hare</submitter_name>
+    <definition>TBD</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_NonNegative_Integer</value_data_type>
+      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>  
+
+  <!-- End attributes for MSSS_Camera_Mini_Header -->
+  
+  <!-- End attribute definitions -->
+
+
+  <!-- Begin class definitions -->
+
+  <!-- Start of MSSS_Camera_Mini_Header class Definition -->
+  <DD_Class>
+    <name>Surface_Mission_Information</name>
+    <version_id>1.0</version_id>
+    <local_identifier>Surface_Mission_Information</local_identifier>
+    <submitter_name>Jordan Padams</submitter_name>
+    <definition>The Surface_Mission_Information class contains attributes specific to surface missions 
+      which apply across instrument types.</definition>
+    <element_flag>true</element_flag>
+    <DD_Association>
+      <identifier_reference>camera_product_id</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>magic_initial</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>magic_final</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>spacecraft_clock_start</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>spacecraft_clock_stop</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>instrument_mode_id</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>initial_size</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>img.Companding</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>img.Detector</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>img.Exposure</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>img.Focus</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>img.Onboard_Compression</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>unbounded</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>img.Optical_Filter</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>unbounded</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+        <identifier_reference>img.Subframe</identifier_reference>
+        <reference_type>component_of</reference_type>
+        <minimum_occurrences>0</minimum_occurrences>
+        <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+        <identifier_reference>img.Instrument_State</identifier_reference>
+        <reference_type>component_of</reference_type>
+        <minimum_occurrences>0</minimum_occurrences>
+        <maximum_occurrences>unbounded</maximum_occurrences>
+    </DD_Association>
+  </DD_Class>
+  <!-- End of MSSS_Camera_Mini_Header class Definition -->
+ 
+  <!-- End class definitions -->
+
+
+  <!-- Begin rule definitions -->
+  
+<!--
+  <DD_Rule>
+    <local_identifier>application_name_value_check</local_identifier>
+    <rule_context>//msss_cam_mh:Telemetry</rule_context>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>msn_surface:application_name = ('ICC_1', 'ICC_2', 'ICC_3', 'ICC_4', 'ICC_5',
+        'ICC_6', 'ICC_UNRECOG', 'IDC_1', 'IDC_2', 'IDC_3', 'IDC_4', 'IDC_5', 'IDC_6',
+        'IDC_UNRECOG')</rule_test>
+      <rule_message>MSSS_CAM_MH:error:application_name_value_check: The attribute
+        msn_surface:application_name must be equal to one of the following values: 'ICC_1', 'ICC_2',
+        'ICC_3', 'ICC_4', 'ICC_5', 'ICC_6', 'ICC_UNRECOG', 'IDC_1', 'IDC_2', 'IDC_3', 'IDC_4',
+        'IDC_5', 'IDC_6', 'IDC_UNRECOG'.</rule_message>
+    </DD_Rule_Statement>
+  </DD_Rule>
+  <DD_Rule>
+    <local_identifier>provider_id_value_check</local_identifier>
+    <rule_context>//msss_cam_mh:Telemetry</rule_context>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>msss_cam_mh:provider_id = ('TTACS')</rule_test>
+      <rule_message>MSSS_CAM_MH:error:provider_id_value_check: The attribute msss_cam_mh:provider_id
+        must be equal to one of the following values: 'TTACS'.</rule_message>
+    </DD_Rule_Statement>
+  </DD_Rule>
+-->
+
+  <!-- End rule definitions -->
+
+</Ingest_LDD>

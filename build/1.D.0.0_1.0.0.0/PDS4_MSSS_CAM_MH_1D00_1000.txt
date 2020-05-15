@@ -1,0 +1,189 @@
+PDS4 Local Data Dictionary Processing Report
+
+Configuration:
+   LDDTool Version        10.1.2
+   LDD Version Id:        1.0.0.0
+   LDD Label Version Id:  1.0
+   LDD Discipline (T/F):  true
+   LDD Namespace URL:     http://pds.nasa.gov/pds4/
+   LDD URN Prefix:        urn:nasa:pds:
+   Time                   Fri May 15 15:58:01 MST 2020
+   Common Schema          [PDS4_PDS_1D00.xsd]
+   Common Schematron      [PDS4_PDS_1D00.sch]
+   IM Version Id:         1.13.0.0
+   IM Namespace Id:       pds
+   IM Label Version Id:   1.19
+   IM Object Model        [UpperModel.pont]
+   IM Data Dictionary     [dd11179.pins]
+   IM Configuration File  [MDPTNConfigClassDisp.xml]
+   IM Glossary            [Glossary.pins]
+   IM Document Spec       [DMDocument.pins]
+
+Parameters:
+   Input File             [PDS4_MSSS_CAM_MH_IngestLDD.xml]
+   PDS Processing         true
+   LDD Processing         true
+   Discipline LDD         true
+   Mission LDD            false
+   Write Attr Elements    false
+   Merge with Master      false
+
+Summary:
+   Classes                1
+   Attributes             7
+   Associations           15
+   Error messages         0
+   Warning messages       1
+   Information messages   4
+
+Detailed validation messages
+   WARNING  Header:  - New namespace id has been specified:msss_cam_mh
+   INFO     Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
+   INFO     Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
+   INFO     Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
+   INFO     Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
+
+Parsed Input - Header:
+   LDD Name               MSSS Camera Mini-header
+   LDD Version            1.0.0.0
+   Full Name              Trent Hare
+   Steward                img
+   Namespace Id           msss_cam_mh
+   Comment                
+    ## CHANGE LOG ##
+    1.0.0.0
+    - Initial version
+
+  
+   Last Modification Time 2020-05-15T13:17:00
+   PDS4 Merge Flag        false
+
+Parsed Input - Attributes:
+
+   name                   camera_product_id
+   version                1.13
+   value data type        ASCII_NonNegative_Integer
+   description            TBD
+
+   name                   magic_initial
+   version                1.13
+   value data type        ASCII_Short_String_Collapsed
+   description            TBD
+
+   name                   magic_final
+   version                1.13
+   value data type        ASCII_Short_String_Collapsed
+   description            TBD
+
+   name                   spacecraft_clock_start
+   version                1.13
+   value data type        ASCII_Short_String_Collapsed
+   description            The spacecraft_clock_start is the value of the spacecraft clock at the beginning of the observation.
+   nillable               true
+   minimum characters     1
+   maximum characters     255
+
+   name                   spacecraft_clock_stop
+   version                1.13
+   value data type        ASCII_Short_String_Collapsed
+   description            The spacecraft_clock_stop is the value of the spacecraft clock at the end of the observation. spacecraft_clock_stop should only be used if there's also a spacecraft_clock_start value.
+   nillable               true
+   minimum characters     1
+   maximum characters     255
+
+   name                   instrument_mode_id
+   version                1.13
+   value data type        ASCII_Short_String_Collapsed
+   description            TBD
+
+   name                   initial_size
+   version                1.13
+   value data type        ASCII_NonNegative_Integer
+   description            TBD
+
+Parsed Input - Classes:
+
+   name                   Surface_Mission_Information
+   description            The Surface_Mission_Information class contains attributes specific to surface missions which apply across instrument types.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      camera_product_id
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      magic_initial
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      magic_final
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      spacecraft_clock_start
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      spacecraft_clock_stop
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      instrument_mode_id
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      initial_size
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img.Companding
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Detector
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Exposure
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Focus
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Onboard_Compression
+      minimum occurrences   0
+      maximum occurrences   unbounded
+      reference type        component_of
+
+      local identifier      img.Optical_Filter
+      minimum occurrences   0
+      maximum occurrences   unbounded
+      reference type        component_of
+
+      local identifier      img.Subframe
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Instrument_State
+      minimum occurrences   0
+      maximum occurrences   unbounded
+      reference type        component_of
+
+End of Report

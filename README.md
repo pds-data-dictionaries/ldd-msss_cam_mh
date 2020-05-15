@@ -19,21 +19,27 @@ this dictionary is specific to this particular class of cameras.
 
 Steward: [IMG Node](https://pds-imaging.jpl.nasa.gov/)
 
-## Released Versions
+## Current Source
 
-A Local Data Dictionary (LDD) is built for each version of the [PDS4 Information Model](https://pds.nasa.gov/datastandards/documents/im/).
-The build process ensures compatibility of the LDD with the core information model.
+Only one LDD source version is kept such that it can be managed by github.
 
-This LDD has been released for the following versions of the PDS4 information model:
+- [1.D.0.0](src)
 
-```
-not yet released
-```
+## Versions
+
+A Local Data Dictionary (LDD) is built for selected versions of the [PDS4 Information Model](https://pds.nasa.gov/pds4/doc/im/).
+The build process insures compatiblity of the LDD with the core information model.
+
+## Builds
+
+This LDD has been built for the following versions of the PDS4 information models.
+
+- [1.D.0.0_1.0.0.0](build/1.D.0.0_1.0.0.0)
 
 ## Notes
 
 Each build is generated using the [lddtool](https://pds.nasa.gov/tools/about/ldd/) specific to a version of the [PDS4 Information Model](https://pds.nasa.gov/datastandards/documents/im/). The build command used is:
 
 ```
-lddtool -lpsnJ ldd-file.xml
+lddtool -lpsnJ PDS4_IMG_IngestLDD.xml PDS4_MSSS_CAM_MH_IngestLDD.xml
 ```
