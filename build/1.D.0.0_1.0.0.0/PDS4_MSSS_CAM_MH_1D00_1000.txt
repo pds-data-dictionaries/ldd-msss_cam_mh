@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Fri May 15 15:58:01 MST 2020
+   Time                   Mon May 18 11:38:53 MST 2020
    Common Schema          [PDS4_PDS_1D00.xsd]
    Common Schematron      [PDS4_PDS_1D00.sch]
    IM Version Id:         1.13.0.0
@@ -63,17 +63,17 @@ Parsed Input - Attributes:
    name                   camera_product_id
    version                1.13
    value data type        ASCII_NonNegative_Integer
-   description            TBD
+   description            Camera data product ID.
 
    name                   magic_initial
    version                1.13
    value data type        ASCII_Short_String_Collapsed
-   description            TBD
+   description            Hexadecimal value that indicates the start of the mini-header.
 
    name                   magic_final
    version                1.13
    value data type        ASCII_Short_String_Collapsed
-   description            TBD
+   description            Hexadecimal value that indicates the end of the mini-header.
 
    name                   spacecraft_clock_start
    version                1.13
@@ -94,12 +94,12 @@ Parsed Input - Attributes:
    name                   instrument_mode_id
    version                1.13
    value data type        ASCII_Short_String_Collapsed
-   description            TBD
+   description            The value of this keyword identifies the instrument mode.
 
    name                   initial_size
    version                1.13
    value data type        ASCII_NonNegative_Integer
-   description            TBD
+   description            Initially-allocated size of data product.
 
 Parsed Input - Classes:
 
