@@ -36,7 +36,7 @@
     <local_identifier>camera_product_id</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>TBD</definition>
+    <definition>Camera data product ID.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_NonNegative_Integer</value_data_type>
@@ -50,7 +50,7 @@
     <local_identifier>magic_initial</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>TBD</definition>
+    <definition>Hexadecimal value that indicates the start of the mini-header.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -63,7 +63,7 @@
     <local_identifier>magic_final</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>TBD</definition>
+    <definition>Hexadecimal value that indicates the end of the mini-header.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -109,7 +109,7 @@
     <local_identifier>instrument_mode_id</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>TBD</definition>
+    <definition>The value of this keyword identifies the instrument mode.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -122,7 +122,7 @@
     <local_identifier>initial_size</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>TBD</definition>
+    <definition>Initially-allocated size of data product.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_NonNegative_Integer</value_data_type>
