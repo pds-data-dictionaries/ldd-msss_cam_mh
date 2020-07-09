@@ -25,7 +25,7 @@
     - Initial version
 
   </comment>
-  <last_modification_date_time>2020-05-15T13:17:00</last_modification_date_time>
+  <last_modification_date_time>2020-06-25T13:17:00</last_modification_date_time>
 
   <!-- Begin attribute definitions -->
 
@@ -36,7 +36,9 @@
     <local_identifier>camera_product_id</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>Camera data product ID.</definition>
+    <definition>Identifier assigned by the camera to this image (aka CDPID).  The identifier is 
+    unique among all products stored on the camera at the time of acquisition, but is not necessarily 
+    unique across the mission.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_NonNegative_Integer</value_data_type>
@@ -50,7 +52,8 @@
     <local_identifier>magic_initial</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>Hexadecimal value that indicates the start of the mini-header.</definition>
+    <definition>Bit pattern (hexadecimal value) at the beginning of the mini-header used to help identify product 
+    boundaries for flash fault recovery.  For MSL, this is a constant 0xFF00F0CA.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -63,7 +66,8 @@
     <local_identifier>magic_final</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>Hexadecimal value that indicates the end of the mini-header.</definition>
+    <definition>Bit pattern (hexadecimal value) at the end of the mini-header used to help identify product 
+    boundaries for flash fault recovery.  For MSL, this is a constant 0x1010CC28.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -109,7 +113,7 @@
     <local_identifier>instrument_mode_id</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>The value of this keyword identifies the instrument mode.</definition>
+    <definition>Specifies the image or video readout mode, which determines the rate the image is read out.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -122,7 +126,7 @@
     <local_identifier>initial_size</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>Initially-allocated size of data product.</definition>
+    <definition>Initially-allocated size of data product by the camera (for compressed data, may not match actual size).</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_NonNegative_Integer</value_data_type>

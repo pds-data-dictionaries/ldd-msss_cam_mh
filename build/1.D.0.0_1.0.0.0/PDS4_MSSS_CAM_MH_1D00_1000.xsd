@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:msss_cam_mh  Version:1.0.0.0 - Mon May 18 11:38:53 MST 2020 -->
+  <!-- PDS4 XML/Schema for Name Space Id:msss_cam_mh  Version:1.0.0.0 - Wed Jul 08 16:58:35 MST 2020 -->
   <!-- Generated from the PDS4 Information Model Version 1.13.0.0 - System Build 10a -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
@@ -18,7 +18,7 @@
     version="1.0.0.0">
  
     <xs:import namespace="http://pds.nasa.gov/pds4/pds/v1" schemaLocation="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd"/>
-    <xs:import namespace="http://pds.nasa.gov/pds4/img/v1" schemaLocation="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1D00_1600.xsd"/>
+    <xs:import namespace="http://pds.nasa.gov/pds4/img/v1" schemaLocation="https://raw.githubusercontent.com/pds-data-dictionaries/ldd-img/master/build/1.D.0.0_1.7.3.0/PDS4_IMG_1D00_1730.xsd"/>
  
   <xs:annotation>
     <xs:documentation>
@@ -68,7 +68,10 @@
 
   <xs:simpleType name="camera_product_id">
     <xs:annotation>
-<xs:documentation>Camera data product ID.</xs:documentation>
+      <xs:documentation>Identifier assigned by the camera to this image
+        (aka CDPID). The identifier is unique among all products stored
+        on the camera at the time of acquisition, but is not necessarily
+        unique across the mission.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="pds:ASCII_NonNegative_Integer">
     	<xs:pattern value='[0-9]+'/>
@@ -79,8 +82,9 @@
 
   <xs:simpleType name="initial_size">
     <xs:annotation>
-      <xs:documentation>Initially-allocated size of data
-        product.</xs:documentation>
+      <xs:documentation>Initially-allocated size of data product by the
+        camera (for compressed data, may not match actual
+        size).</xs:documentation>
     </xs:annotation>
     <xs:restriction base="pds:ASCII_NonNegative_Integer">
     	<xs:pattern value='[0-9]+'/>
@@ -91,8 +95,8 @@
 
   <xs:simpleType name="instrument_mode_id">
     <xs:annotation>
-      <xs:documentation>The value of this keyword identifies the
-        instrument mode.</xs:documentation>
+      <xs:documentation>Specifies the image or video readout mode, which
+        determines the rate the image is read out.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="pds:ASCII_Short_String_Collapsed">
      <xs:minLength value="1"/>
@@ -102,8 +106,10 @@
 
   <xs:simpleType name="magic_final">
     <xs:annotation>
-      <xs:documentation>Hexadecimal value that indicates the end of the
-        mini-header.</xs:documentation>
+      <xs:documentation>Bit pattern (hexadecimal value) at the end of
+        the mini-header used to help identify product boundaries for
+        flash fault recovery. For MSL, this is a constant
+        0x1010CC28.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="pds:ASCII_Short_String_Collapsed">
      <xs:minLength value="1"/>
@@ -113,8 +119,10 @@
 
   <xs:simpleType name="magic_initial">
     <xs:annotation>
-      <xs:documentation>Hexadecimal value that indicates the start of
-        the mini-header.</xs:documentation>
+      <xs:documentation>Bit pattern (hexadecimal value) at the beginning
+        of the mini-header used to help identify product boundaries for
+        flash fault recovery. For MSL, this is a constant
+        0xFF00F0CA.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="pds:ASCII_Short_String_Collapsed">
      <xs:minLength value="1"/>
@@ -156,7 +164,7 @@
     "dataDictionary": {
       "Title": "PDS4 Data Dictionary" ,
       "Version": "1.13.0.0" ,
-      "Date": "Mon May 18 11:38:53 MST 2020" ,
+      "Date": "Wed Jul 08 16:58:35 MST 2020" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "PropertyMapDictionary": [
       ]
