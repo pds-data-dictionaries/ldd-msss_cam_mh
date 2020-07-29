@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Wed Jul 29 15:52:18 UTC 2020
+   Time                   Wed Jul 29 16:06:37 UTC 2020
    Common Schema          [PDS4_PDS_1E00.xsd]
    Common Schematron      [PDS4_PDS_1E00.sch]
    IM Version Id:         1.14.0.0
@@ -32,30 +32,37 @@ Summary:
    Classes                1
    Attributes             7
    Associations           15
-   Error messages         16
-   Warning messages       1
+   Error messages         0
+   Warning messages       24
    Information messages   6
 
 Detailed validation messages
-   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Companding  Class:img.Companding - Missing Component Class
-   ERROR    Association: img.Companding - Missing Component - Reference Type: component_of
-   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Detector  Class:img.Detector - Missing Component Class
-   ERROR    Association: img.Detector - Missing Component - Reference Type: component_of
-   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Exposure  Class:img.Exposure - Missing Component Class
-   ERROR    Association: img.Exposure - Missing Component - Reference Type: component_of
-   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Focus  Class:img.Focus - Missing Component Class
-   ERROR    Association: img.Focus - Missing Component - Reference Type: component_of
-   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Onboard_Compression  Class:img.Onboard_Compression - Missing Component Class
-   ERROR    Association: img.Onboard_Compression - Missing Component - Reference Type: component_of
-   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Optical_Filter  Class:img.Optical_Filter - Missing Component Class
-   ERROR    Association: img.Optical_Filter - Missing Component - Reference Type: component_of
-   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Subframe  Class:img.Subframe - Missing Component Class
-   ERROR    Association: img.Subframe - Missing Component - Reference Type: component_of
-   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Instrument_State  Class:img.Instrument_State - Missing Component Class
-   ERROR    Association: img.Instrument_State - Missing Component - Reference Type: component_of
    INFO     Attribute: <spacecraft_clock_start> - A 'nilable' attribute was found that is not a required attribute in at least one class.
    INFO     Attribute: <spacecraft_clock_stop> - A 'nilable' attribute was found that is not a required attribute in at least one class.
    WARNING  Header:  - New namespace id has been specified:msss_cam_mh
+   WARNING  Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    INFO     Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
    INFO     Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
    INFO     Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
