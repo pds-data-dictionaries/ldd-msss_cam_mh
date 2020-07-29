@@ -1,0 +1,3 @@
+[submodule "src/dependencies/ldd-img"]
+	path = src/dependencies/ldd-img
+	url = https://github.com/pds-data-dictionaries/ldd-img
