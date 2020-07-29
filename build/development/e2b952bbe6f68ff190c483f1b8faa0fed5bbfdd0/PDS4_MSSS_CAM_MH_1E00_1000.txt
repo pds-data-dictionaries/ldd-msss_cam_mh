@@ -1,0 +1,207 @@
+PDS4 Local Data Dictionary Processing Report
+
+Configuration:
+   LDDTool Version        11.3.1
+   LDD Version Id:        1.0.0.0
+   LDD Label Version Id:  1.0
+   LDD Discipline (T/F):  true
+   LDD Namespace URL:     http://pds.nasa.gov/pds4/
+   LDD URN Prefix:        urn:nasa:pds:
+   Time                   Wed Jul 29 15:52:18 UTC 2020
+   Common Schema          [PDS4_PDS_1E00.xsd]
+   Common Schematron      [PDS4_PDS_1E00.sch]
+   IM Version Id:         1.14.0.0
+   IM Namespace Id:       pds
+   IM Label Version Id:   1.20
+   IM Object Model        [UpperModel.pont]
+   IM Data Dictionary     [dd11179.pins]
+   IM Configuration File  [MDPTNConfigClassDisp.xml]
+   IM Glossary            [Glossary.pins]
+   IM Document Spec       [DMDocument.pins]
+
+Parameters:
+   Input File             [/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/PDS4_MSSS_CAM_MH_IngestLDD.xml]
+   PDS Processing         true
+   LDD Processing         true
+   Discipline LDD         true
+   Mission LDD            false
+   Write Attr Elements    false
+   Merge with Master      false
+
+Summary:
+   Classes                1
+   Attributes             7
+   Associations           15
+   Error messages         16
+   Warning messages       1
+   Information messages   6
+
+Detailed validation messages
+   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Companding  Class:img.Companding - Missing Component Class
+   ERROR    Association: img.Companding - Missing Component - Reference Type: component_of
+   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Detector  Class:img.Detector - Missing Component Class
+   ERROR    Association: img.Detector - Missing Component - Reference Type: component_of
+   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Exposure  Class:img.Exposure - Missing Component Class
+   ERROR    Association: img.Exposure - Missing Component - Reference Type: component_of
+   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Focus  Class:img.Focus - Missing Component Class
+   ERROR    Association: img.Focus - Missing Component - Reference Type: component_of
+   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Onboard_Compression  Class:img.Onboard_Compression - Missing Component Class
+   ERROR    Association: img.Onboard_Compression - Missing Component - Reference Type: component_of
+   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Optical_Filter  Class:img.Optical_Filter - Missing Component Class
+   ERROR    Association: img.Optical_Filter - Missing Component - Reference Type: component_of
+   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Subframe  Class:img.Subframe - Missing Component Class
+   ERROR    Association: img.Subframe - Missing Component - Reference Type: component_of
+   ERROR    Class:0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information  Association:img.Instrument_State  Class:img.Instrument_State - Missing Component Class
+   ERROR    Association: img.Instrument_State - Missing Component - Reference Type: component_of
+   INFO     Attribute: <spacecraft_clock_start> - A 'nilable' attribute was found that is not a required attribute in at least one class.
+   INFO     Attribute: <spacecraft_clock_stop> - A 'nilable' attribute was found that is not a required attribute in at least one class.
+   WARNING  Header:  - New namespace id has been specified:msss_cam_mh
+   INFO     Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
+   INFO     Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
+   INFO     Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
+   INFO     Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
+
+Parsed Input - Header:
+   LDD Name               MSSS Camera Mini-header
+   LDD Version            1.0.0.0
+   Full Name              Trent Hare
+   Steward                img
+   Namespace Id           msss_cam_mh
+   Comment                
+    ## CHANGE LOG ##
+    1.0.0.0
+    - Initial version
+
+  
+   Last Modification Time 2020-06-25T13:17:00
+   PDS4 Merge Flag        false
+
+Parsed Input - Attributes:
+
+   name                   camera_product_id
+   version                1.14
+   value data type        ASCII_NonNegative_Integer
+   description            Identifier assigned by the camera to this image (aka CDPID). The identifier is unique among all products stored on the camera at the time of acquisition, but is not necessarily unique across the mission.
+
+   name                   magic_initial
+   version                1.14
+   value data type        ASCII_Short_String_Collapsed
+   description            Bit pattern (hexadecimal value) at the beginning of the mini-header used to help identify product boundaries for flash fault recovery. For MSL, this is a constant 0xFF00F0CA.
+
+   name                   magic_final
+   version                1.14
+   value data type        ASCII_Short_String_Collapsed
+   description            Bit pattern (hexadecimal value) at the end of the mini-header used to help identify product boundaries for flash fault recovery. For MSL, this is a constant 0x1010CC28.
+
+   name                   spacecraft_clock_start
+   version                1.14
+   value data type        ASCII_Short_String_Collapsed
+   description            The spacecraft_clock_start is the value of the spacecraft clock at the beginning of the observation.
+   nillable               true
+   minimum characters     1
+   maximum characters     255
+
+   name                   spacecraft_clock_stop
+   version                1.14
+   value data type        ASCII_Short_String_Collapsed
+   description            The spacecraft_clock_stop is the value of the spacecraft clock at the end of the observation. spacecraft_clock_stop should only be used if there's also a spacecraft_clock_start value.
+   nillable               true
+   minimum characters     1
+   maximum characters     255
+
+   name                   instrument_mode_id
+   version                1.14
+   value data type        ASCII_Short_String_Collapsed
+   description            Specifies the image or video readout mode, which determines the rate the image is read out.
+
+   name                   initial_size
+   version                1.14
+   value data type        ASCII_NonNegative_Integer
+   description            Initially-allocated size of data product by the camera (for compressed data, may not match actual size).
+
+Parsed Input - Classes:
+
+   name                   Surface_Mission_Information
+   description            The Surface_Mission_Information class contains attributes specific to surface missions which apply across instrument types.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      camera_product_id
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      magic_initial
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      magic_final
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      spacecraft_clock_start
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      spacecraft_clock_stop
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      instrument_mode_id
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      initial_size
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img.Companding
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Detector
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Exposure
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Focus
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Onboard_Compression
+      minimum occurrences   0
+      maximum occurrences   unbounded
+      reference type        component_of
+
+      local identifier      img.Optical_Filter
+      minimum occurrences   0
+      maximum occurrences   unbounded
+      reference type        component_of
+
+      local identifier      img.Subframe
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img.Instrument_State
+      minimum occurrences   0
+      maximum occurrences   unbounded
+      reference type        component_of
+
+End of Report
