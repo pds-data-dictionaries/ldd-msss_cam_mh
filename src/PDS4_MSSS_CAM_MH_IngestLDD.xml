@@ -25,7 +25,7 @@
     - Initial version
 
   </comment>
-  <last_modification_date_time>2020-06-25T13:17:00</last_modification_date_time>
+  <last_modification_date_time>2020-08-13T13:17:00</last_modification_date_time>
 
   <!-- Begin attribute definitions -->
 
@@ -121,18 +121,52 @@
   </DD_Attribute>  
 
   <DD_Attribute>
+    <name>instrument_serial_number</name>
+    <version_id>1.0</version_id>
+    <local_identifier>instrument_serial_number</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Cristina De Cesare</submitter_name>
+    <definition>The instrument serial number element provides
+      the manufacturer's serial number assigned to an instrument. This
+      number may be used to uniquely identify a particular instrument
+      for tracing its components or determining its calibration
+      history, for example.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
     <name>initial_size</name>
     <version_id>1.0</version_id>
     <local_identifier>initial_size</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Trent Hare</submitter_name>
-    <definition>Initially-allocated size of data product by the camera (for compressed data, may not match actual size).</definition>
+    <definition>Initially-allocated size of data product by the camera (for compressed data, 
+      may not match actual size).</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_NonNegative_Integer</value_data_type>
       <unit_of_measure_type>Units_of_None</unit_of_measure_type>
     </DD_Value_Domain>
   </DD_Attribute>  
+
+  <DD_Attribute>
+    <name>analog_offset</name>
+    <version_id>1.0</version_id>
+    <local_identifier>analog_offset</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Elizabeth D. Rye</submitter_name>
+    <definition>The analog_offset attribute identifies the analog value that is subtracted from the
+      signal prior to the analog/digital conversion.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Integer</value_data_type>
+      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
 
   <!-- End attributes for MSSS_Camera_Mini_Header -->
   
@@ -143,12 +177,14 @@
 
   <!-- Start of MSSS_Camera_Mini_Header class Definition -->
   <DD_Class>
-    <name>Surface_Mission_Information</name>
+    <name>MSSS_Camera_Mini_Header</name>
     <version_id>1.0</version_id>
-    <local_identifier>Surface_Mission_Information</local_identifier>
+    <local_identifier>MSSS_Camera_Mini_Header</local_identifier>
     <submitter_name>Jordan Padams</submitter_name>
-    <definition>The Surface_Mission_Information class contains attributes specific to surface missions 
-      which apply across instrument types.</definition>
+    <definition>The MSSS_Camera_Mini_Header class contains information for cameras developed 
+      by Malin Space Science Systems (MSSS) that share a common architecture or digital 
+      electronics assembly. Example cameras include Mastcam, MAHLI, MARDI, Mastcam-Z, 
+      SHERLOC-Watson and SHERLOC-ACI.</definition>
     <element_flag>true</element_flag>
     <DD_Association>
       <identifier_reference>camera_product_id</identifier_reference>
@@ -187,13 +223,25 @@
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
+      <identifier_reference>instrument_serial_number</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
       <identifier_reference>initial_size</identifier_reference>
       <reference_type>attribute_of</reference_type>
       <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <identifier_reference>img.Companding</identifier_reference>
+      <identifier_reference>analog_offset</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>img.Sampling</identifier_reference>
       <reference_type>component_of</reference_type>
       <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
