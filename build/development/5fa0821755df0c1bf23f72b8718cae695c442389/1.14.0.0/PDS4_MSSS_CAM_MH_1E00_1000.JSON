@@ -3,23 +3,23 @@
     "dataDictionary": {
       "Title": "PDS4 Data Dictionary" ,
       "Version": "1.14.0.0" ,
-      "Date": "Tue Aug 04 22:40:21 UTC 2020" ,
+      "Date": "Tue Aug 25 03:25:41 UTC 2020" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "classDictionary": [
         {
           "class": {
-            "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information" ,
-            "title": "Surface_Mission_Information" ,
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header" ,
+            "title": "MSSS_Camera_Mini_Header" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "msss_cam_mh" ,
             "steward": "img" ,
             "versionId": "1.0.0.0" ,
             "isAbstract": "false" ,
             "isDeprecated": "false" ,
-            "description": "The Surface_Mission_Information class contains attributes specific to surface missions which apply across instrument types."
+            "description": "The MSSS_Camera_Mini_Header class contains information for cameras developed by Malin Space Science Systems (MSSS) that share a common architecture or digital electronics assembly. Example cameras include Mastcam, MAHLI, MARDI, Mastcam-Z, SHERLOC-Watson and SHERLOC-ACI."
               , "associationList": [
              {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.camera_product_id" ,
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.camera_product_id" ,
                 "title": "camera_product_id" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -30,12 +30,12 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1010" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.camera_product_id"
+                  "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.camera_product_id"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.magic_initial" ,
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.magic_initial" ,
                 "title": "magic_initial" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -46,12 +46,12 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1020" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.magic_initial"
+                  "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.magic_initial"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.magic_final" ,
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.magic_final" ,
                 "title": "magic_final" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -62,12 +62,12 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1030" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.magic_final"
+                  "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.magic_final"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.spacecraft_clock_start" ,
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.spacecraft_clock_start" ,
                 "title": "spacecraft_clock_start" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -78,12 +78,12 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1040" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.spacecraft_clock_start"
+                  "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.spacecraft_clock_start"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.spacecraft_clock_stop" ,
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.spacecraft_clock_stop" ,
                 "title": "spacecraft_clock_stop" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -94,12 +94,12 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1050" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.spacecraft_clock_stop"
+                  "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.spacecraft_clock_stop"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.instrument_mode_id" ,
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.instrument_mode_id" ,
                 "title": "instrument_mode_id" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -110,13 +110,13 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1060" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.instrument_mode_id"
+                  "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.instrument_mode_id"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.initial_size" ,
-                "title": "initial_size" ,
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.instrument_serial_number" ,
+                "title": "instrument_serial_number" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
                 "isChoice": "false" ,
@@ -126,135 +126,39 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1070" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.initial_size"
+                  "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.instrument_serial_number"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.img.Companding" ,
-                "title": "Companding" ,
-                "assocType": "component_of" ,
-                "isAttribute": "false" ,
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.initial_size" ,
+                "title": "initial_size" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
                 "isChoice": "false" ,
                 "isAny": "false" ,
                 "groupName": "null" ,
                 "minimumCardinality": "0" ,
                 "maximumCardinality": "1" ,
                 "classOrder": "1080" ,
-                "classId": [
-                  "0001_NASA_PDS_1.img.Companding"
+                "attributeId": [
+                  "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.initial_size"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.img.Detector" ,
-                "title": "Detector" ,
-                "assocType": "component_of" ,
-                "isAttribute": "false" ,
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.analog_offset" ,
+                "title": "analog_offset" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
                 "isChoice": "false" ,
                 "isAny": "false" ,
                 "groupName": "null" ,
                 "minimumCardinality": "0" ,
                 "maximumCardinality": "1" ,
                 "classOrder": "1090" ,
-                "classId": [
-                  "0001_NASA_PDS_1.img.Detector"
-                 ]
-              }
-            }
-           , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.img.Exposure" ,
-                "title": "Exposure" ,
-                "assocType": "component_of" ,
-                "isAttribute": "false" ,
-                "isChoice": "false" ,
-                "isAny": "false" ,
-                "groupName": "null" ,
-                "minimumCardinality": "0" ,
-                "maximumCardinality": "1" ,
-                "classOrder": "1100" ,
-                "classId": [
-                  "0001_NASA_PDS_1.img.Exposure"
-                 ]
-              }
-            }
-           , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.img.Focus" ,
-                "title": "Focus" ,
-                "assocType": "component_of" ,
-                "isAttribute": "false" ,
-                "isChoice": "false" ,
-                "isAny": "false" ,
-                "groupName": "null" ,
-                "minimumCardinality": "0" ,
-                "maximumCardinality": "1" ,
-                "classOrder": "1110" ,
-                "classId": [
-                  "0001_NASA_PDS_1.img.Focus"
-                 ]
-              }
-            }
-           , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.img.Onboard_Compression" ,
-                "title": "Onboard_Compression" ,
-                "assocType": "component_of" ,
-                "isAttribute": "false" ,
-                "isChoice": "false" ,
-                "isAny": "false" ,
-                "groupName": "null" ,
-                "minimumCardinality": "0" ,
-                "maximumCardinality": "*" ,
-                "classOrder": "1120" ,
-                "classId": [
-                  "0001_NASA_PDS_1.img.Onboard_Compression"
-                 ]
-              }
-            }
-           , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.img.Optical_Filter" ,
-                "title": "Optical_Filter" ,
-                "assocType": "component_of" ,
-                "isAttribute": "false" ,
-                "isChoice": "false" ,
-                "isAny": "false" ,
-                "groupName": "null" ,
-                "minimumCardinality": "0" ,
-                "maximumCardinality": "*" ,
-                "classOrder": "1130" ,
-                "classId": [
-                  "0001_NASA_PDS_1.img.Optical_Filter"
-                 ]
-              }
-            }
-           , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.img.Subframe" ,
-                "title": "Subframe" ,
-                "assocType": "component_of" ,
-                "isAttribute": "false" ,
-                "isChoice": "false" ,
-                "isAny": "false" ,
-                "groupName": "null" ,
-                "minimumCardinality": "0" ,
-                "maximumCardinality": "1" ,
-                "classOrder": "1140" ,
-                "classId": [
-                  "0001_NASA_PDS_1.img.Subframe"
-                 ]
-              }
-            }
-           , {"association": {
-                "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.img.Instrument_State" ,
-                "title": "Instrument_State" ,
-                "assocType": "component_of" ,
-                "isAttribute": "false" ,
-                "isChoice": "false" ,
-                "isAny": "false" ,
-                "groupName": "null" ,
-                "minimumCardinality": "0" ,
-                "maximumCardinality": "*" ,
-                "classOrder": "1150" ,
-                "classId": [
-                  "0001_NASA_PDS_1.img.Instrument_State"
+                "attributeId": [
+                  "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.analog_offset"
                  ]
               }
             }
@@ -265,7 +169,32 @@
     , "attributeDictionary": [
         {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.camera_product_id" ,
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.analog_offset" ,
+            "title": "analog_offset" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "msss_cam_mh" ,
+            "steward": "img" ,
+            "versionId": "1.14" ,
+            "description": "The analog_offset attribute identifies the analog value that is subtracted from the signal prior to the analog\/digital conversion." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-9223372036854775808" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.camera_product_id" ,
             "title": "camera_product_id" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "msss_cam_mh" ,
@@ -290,7 +219,7 @@
         }
       , {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.initial_size" ,
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.initial_size" ,
             "title": "initial_size" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "msss_cam_mh" ,
@@ -315,7 +244,7 @@
         }
       , {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.instrument_mode_id" ,
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.instrument_mode_id" ,
             "title": "instrument_mode_id" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "msss_cam_mh" ,
@@ -340,7 +269,32 @@
         }
       , {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.magic_final" ,
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.instrument_serial_number" ,
+            "title": "instrument_serial_number" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "msss_cam_mh" ,
+            "steward": "img" ,
+            "versionId": "1.14" ,
+            "description": "The instrument serial number element provides the manufacturer's serial number assigned to an instrument. This number may be used to uniquely identify a particular instrument for tracing its components or determining its calibration history, for example." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.magic_final" ,
             "title": "magic_final" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "msss_cam_mh" ,
@@ -365,7 +319,7 @@
         }
       , {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.magic_initial" ,
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.magic_initial" ,
             "title": "magic_initial" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "msss_cam_mh" ,
@@ -390,7 +344,7 @@
         }
       , {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.spacecraft_clock_start" ,
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.spacecraft_clock_start" ,
             "title": "spacecraft_clock_start" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "msss_cam_mh" ,
@@ -415,7 +369,7 @@
         }
       , {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.msss_cam_mh.Surface_Mission_Information.msss_cam_mh.spacecraft_clock_stop" ,
+            "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.spacecraft_clock_stop" ,
             "title": "spacecraft_clock_stop" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "msss_cam_mh" ,

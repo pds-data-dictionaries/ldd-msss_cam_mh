@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:msss_cam_mh  Version:1.0.0.0 - Tue Aug 04 22:40:21 UTC 2020 -->
+  <!-- PDS4 XML/Schema for Name Space Id:msss_cam_mh  Version:1.0.0.0 - Tue Aug 25 03:25:41 UTC 2020 -->
   <!-- Generated from the PDS4 Information Model Version 1.14.0.0 - System Build 10b -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
   <!--               Dictionary Stack                                            -->
   <!-- 1.14.0.0 - pds: - Common Dictionary                                       -->
-  <!-- 1.7.3.0 - img: - Imaging                                                  -->
-  <!--   file:/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/dependencies -->
   <!-- 1.0.0.0 - msss_cam_mh: - MSSS Camera Mini-header                          -->
   <!--   file:/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/PDS4_MSSS_CA -->
   <!--                                                                           -->
@@ -14,13 +12,11 @@
     targetNamespace="http://pds.nasa.gov/pds4/msss_cam_mh/v1"
     xmlns:msss_cam_mh="http://pds.nasa.gov/pds4/msss_cam_mh/v1"
     xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
-    xmlns:img="http://pds.nasa.gov/pds4/img/v1"
     elementFormDefault="qualified"
     attributeFormDefault="unqualified"
     version="1.0.0.0">
  
     <xs:import namespace="http://pds.nasa.gov/pds4/pds/v1" schemaLocation="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd"/>
-    <xs:import namespace="http://pds.nasa.gov/pds4/img/v1" schemaLocation="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1E00_1600.xsd"/>
  
   <xs:annotation>
     <xs:documentation>
@@ -33,13 +29,15 @@
     </xs:documentation>
   </xs:annotation>
  
-  <xs:element name="Surface_Mission_Information" type="msss_cam_mh:Surface_Mission_Information"> </xs:element>
+  <xs:element name="MSSS_Camera_Mini_Header" type="msss_cam_mh:MSSS_Camera_Mini_Header"> </xs:element>
 
-  <xs:complexType name="Surface_Mission_Information">
+  <xs:complexType name="MSSS_Camera_Mini_Header">
     <xs:annotation>
-      <xs:documentation>The Surface_Mission_Information class contains
-        attributes specific to surface missions which apply across
-        instrument types.</xs:documentation>
+      <xs:documentation>The MSSS_Camera_Mini_Header class contains
+        information for cameras developed by Malin Space Science Systems
+        (MSSS) that share a common architecture or digital electronics
+        assembly. Example cameras include Mastcam, MAHLI, MARDI,
+        Mastcam-Z, SHERLOC-Watson and SHERLOC-ACI.</xs:documentation>
     </xs:annotation>
     <xs:sequence>
       <xs:element name="camera_product_id" type="msss_cam_mh:camera_product_id" minOccurs="1" maxOccurs="1"> </xs:element>
@@ -48,15 +46,9 @@
       <xs:element name="spacecraft_clock_start" nillable="true" type="msss_cam_mh:spacecraft_clock_start" minOccurs="0" maxOccurs="1"> </xs:element>
       <xs:element name="spacecraft_clock_stop" nillable="true" type="msss_cam_mh:spacecraft_clock_stop" minOccurs="0" maxOccurs="1"> </xs:element>
       <xs:element name="instrument_mode_id" type="msss_cam_mh:instrument_mode_id" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="instrument_serial_number" type="msss_cam_mh:instrument_serial_number" minOccurs="0" maxOccurs="1"> </xs:element>
       <xs:element name="initial_size" type="msss_cam_mh:initial_size" minOccurs="0" maxOccurs="1"> </xs:element>
-      <xs:element ref="img:Companding" minOccurs="0" maxOccurs="1"> </xs:element>
-      <xs:element ref="img:Detector" minOccurs="0" maxOccurs="1"> </xs:element>
-      <xs:element ref="img:Exposure" minOccurs="0" maxOccurs="1"> </xs:element>
-      <xs:element ref="img:Focus" minOccurs="0" maxOccurs="1"> </xs:element>
-      <xs:element ref="img:Onboard_Compression" minOccurs="0" maxOccurs="unbounded"> </xs:element>
-      <xs:element ref="img:Optical_Filter" minOccurs="0" maxOccurs="unbounded"> </xs:element>
-      <xs:element ref="img:Subframe" minOccurs="0" maxOccurs="1"> </xs:element>
-      <xs:element ref="img:Instrument_State" minOccurs="0" maxOccurs="unbounded"> </xs:element>
+      <xs:element name="analog_offset" type="msss_cam_mh:analog_offset" minOccurs="0" maxOccurs="1"> </xs:element>
     </xs:sequence>
   </xs:complexType>
 
@@ -67,6 +59,18 @@
         common namespace.
       </xs:documentation>
     </xs:annotation>
+
+  <xs:simpleType name="analog_offset">
+    <xs:annotation>
+      <xs:documentation>The analog_offset attribute identifies the
+        analog value that is subtracted from the signal prior to the
+        analog/digital conversion.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Integer">
+     <xs:minInclusive value="-9223372036854775808"/>
+     <xs:maxInclusive value="9223372036854775807"/>
+	   </xs:restriction>
+  </xs:simpleType>
 
   <xs:simpleType name="camera_product_id">
     <xs:annotation>
@@ -99,6 +103,20 @@
     <xs:annotation>
       <xs:documentation>Specifies the image or video readout mode, which
         determines the rate the image is read out.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+     <xs:minLength value="1"/>
+     <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="instrument_serial_number">
+    <xs:annotation>
+      <xs:documentation>The instrument serial number element provides
+        the manufacturer's serial number assigned to an instrument. This
+        number may be used to uniquely identify a particular instrument
+        for tracing its components or determining its calibration
+        history, for example.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="pds:ASCII_Short_String_Collapsed">
      <xs:minLength value="1"/>
@@ -158,21 +176,4 @@
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
- 
-  <xs:annotation>
-    <xs:documentation>
-[
-  {
-    "dataDictionary": {
-      "Title": "PDS4 Data Dictionary" ,
-      "Version": "1.14.0.0" ,
-      "Date": "Tue Aug 04 22:40:21 UTC 2020" ,
-      "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
-      "PropertyMapDictionary": [
-      ]
-    }
-  }
-]
-    </xs:documentation>
-  </xs:annotation>
 </xs:schema>
