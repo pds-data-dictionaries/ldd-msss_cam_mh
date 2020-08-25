@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model 
-    href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"
+    href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model 
-    href="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1D00_1730.sch" 
+    href="https://raw.githubusercontent.com/pds-data-dictionaries/ldd-img/master/build/release/1.E.0.0_1.8.0.0/PDS4_IMG_1E00_1800.sch"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--     href="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1E00_1800.sch" 
+-->
 
 <Ingest_LDD 
     xmlns="http://pds.nasa.gov/pds4/pds/v1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:img="http://pds.nasa.gov/pds4/img/v1"
     xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"    
-    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd    
-                        http://pds.nasa.gov/pds4/img/v1 https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1D00_1730.xsd">
-
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd 
+                        https://pds.nasa.gov/pds4/img/v1
+                        https://raw.githubusercontent.com/pds-data-dictionaries/ldd-img/master/build/release/1.E.0.0_1.8.0.0/PDS4_IMG_1E00_1800.xsd">
+<!--                        https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1E00_1800.xsd">
+-->
   <name>MSSS Camera Mini-header</name>
   <ldd_version_id>1.0.0.0</ldd_version_id>
+  <dictionary_type>Discipline</dictionary_type>
   <full_name>Trent Hare</full_name>
   <steward_id>img</steward_id>
   <namespace_id>msss_cam_mh</namespace_id>
@@ -25,7 +30,7 @@
     - Initial version
 
   </comment>
-  <last_modification_date_time>2020-08-13T13:17:00</last_modification_date_time>
+  <last_modification_date_time>2020-08-19T13:17:00</last_modification_date_time>
 
   <!-- Begin attribute definitions -->
 
