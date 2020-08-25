@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        11.3.1
+   LDDTool Version        11.3.2
    LDD Version Id:        1.0.0.0
    LDD Label Version Id:  1.0
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Tue Aug 04 22:40:21 UTC 2020
+   Time                   Tue Aug 25 19:27:11 UTC 2020
    Common Schema          [PDS4_PDS_1E00.xsd]
    Common Schematron      [PDS4_PDS_1E00.sch]
    IM Version Id:         1.14.0.0
@@ -30,11 +30,11 @@ Parameters:
 
 Summary:
    Classes                1
-   Attributes             7
-   Associations           15
+   Attributes             9
+   Associations           17
    Error messages         0
    Warning messages       24
-   Information messages   6
+   Information messages   7
 
 Detailed validation messages
    INFO     Attribute: <spacecraft_clock_start> - A 'nilable' attribute was found that is not a required attribute in at least one class.
@@ -67,6 +67,7 @@ Detailed validation messages
    INFO     Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
    INFO     Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
    INFO     Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
+   INFO     Attribute: <instrument_serial_number> - This local attribute has a duplicate in the PDS4 data dictionary.
 
 Parsed Input - Header:
    LDD Name               MSSS Camera Mini-header
@@ -80,7 +81,7 @@ Parsed Input - Header:
     - Initial version
 
   
-   Last Modification Time 2020-06-25T13:17:00
+   Last Modification Time 2020-08-13T13:17:00
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
@@ -121,15 +122,25 @@ Parsed Input - Attributes:
    value data type        ASCII_Short_String_Collapsed
    description            Specifies the image or video readout mode, which determines the rate the image is read out.
 
+   name                   instrument_serial_number
+   version                1.14
+   value data type        ASCII_Short_String_Collapsed
+   description            The instrument serial number element provides the manufacturer's serial number assigned to an instrument. This number may be used to uniquely identify a particular instrument for tracing its components or determining its calibration history, for example.
+
    name                   initial_size
    version                1.14
    value data type        ASCII_NonNegative_Integer
    description            Initially-allocated size of data product by the camera (for compressed data, may not match actual size).
 
+   name                   analog_offset
+   version                1.14
+   value data type        ASCII_Integer
+   description            The analog_offset attribute identifies the analog value that is subtracted from the signal prior to the analog/digital conversion.
+
 Parsed Input - Classes:
 
-   name                   Surface_Mission_Information
-   description            The Surface_Mission_Information class contains attributes specific to surface missions which apply across instrument types.
+   name                   MSSS_Camera_Mini_Header
+   description            The MSSS_Camera_Mini_Header class contains information for cameras developed by Malin Space Science Systems (MSSS) that share a common architecture or digital electronics assembly. Example cameras include Mastcam, MAHLI, MARDI, Mastcam-Z, SHERLOC-Watson and SHERLOC-ACI.
    is abstract            false
    is choice              false
    subclass of            USER
@@ -166,12 +177,22 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      instrument_serial_number
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
       local identifier      initial_size
       minimum occurrences   0
       maximum occurrences   1
       reference type        attribute_of
 
-      local identifier      img.Companding
+      local identifier      analog_offset
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img.Sampling
       minimum occurrences   0
       maximum occurrences   1
       reference type        component_of
