@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Wed Aug 26 17:09:33 MST 2020
+   Time                   Wed Aug 26 17:39:55 MST 2020
    Common Schema          [PDS4_PDS_1E00.xsd]
    Common Schematron      [PDS4_PDS_1E00.sch]
    IM Version Id:         1.14.0.0
@@ -33,7 +33,7 @@ Summary:
    Attributes             9
    Associations           17
    Error messages         0
-   Warning messages       34
+   Warning messages       40
    Information messages   7
 
 Detailed validation messages
@@ -47,9 +47,11 @@ Detailed validation messages
    WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
@@ -60,16 +62,20 @@ Detailed validation messages
    WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+   WARNING  Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
    WARNING  Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
