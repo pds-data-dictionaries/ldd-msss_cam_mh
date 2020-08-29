@@ -3,7 +3,7 @@
     "dataDictionary": {
       "Title": "PDS4 Data Dictionary" ,
       "Version": "1.14.0.0" ,
-      "Date": "Thu Aug 27 00:01:53 UTC 2020" ,
+      "Date": "Fri Aug 28 00:42:07 UTC 2020" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "classDictionary": [
         {
@@ -159,6 +159,134 @@
                 "classOrder": "1090" ,
                 "attributeId": [
                   "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.msss_cam_mh.analog_offset"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.img.Detector" ,
+                "title": "Detector" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1100" ,
+                "classId": [
+                  "0001_NASA_PDS_1.img.Detector"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.img.Exposure" ,
+                "title": "Exposure" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1110" ,
+                "classId": [
+                  "0001_NASA_PDS_1.img.Exposure"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.img.Focus" ,
+                "title": "Focus" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1120" ,
+                "classId": [
+                  "0001_NASA_PDS_1.img.Focus"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.img.Onboard_Compression" ,
+                "title": "Onboard_Compression" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1130" ,
+                "classId": [
+                  "0001_NASA_PDS_1.img.Onboard_Compression"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.img.Optical_Filter" ,
+                "title": "Optical_Filter" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1140" ,
+                "classId": [
+                  "0001_NASA_PDS_1.img.Optical_Filter"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.img.Sampling" ,
+                "title": "Sampling" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1150" ,
+                "classId": [
+                  "0001_NASA_PDS_1.img.Sampling"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.img.Subframe" ,
+                "title": "Subframe" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1160" ,
+                "classId": [
+                  "0001_NASA_PDS_1.img.Subframe"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header.img.Instrument_State" ,
+                "title": "Instrument_State" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1170" ,
+                "classId": [
+                  "0001_NASA_PDS_1.img.Instrument_State"
                  ]
               }
             }
