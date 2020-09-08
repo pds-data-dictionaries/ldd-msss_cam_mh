@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:msss_cam_mh  Version:1.0.0.0 - Fri Aug 28 00:42:07 UTC 2020 -->
+  <!-- PDS4 XML/Schema for Name Space Id:msss_cam_mh  Version:1.0.0.0 - Tue Sep 08 20:48:13 UTC 2020 -->
   <!-- Generated from the PDS4 Information Model Version 1.14.0.0 - System Build 10b -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
   <!--               Dictionary Stack                                            -->
   <!-- 1.14.0.0 - pds: - Common Dictionary                                       -->
-  <!-- 1.7.3.0 - img: - Imaging                                                  -->
+  <!-- 1.8.1.0 - img: - Imaging                                                  -->
   <!--   file:/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/dependencies -->
-  <!-- 1.7.3.0 - img: - Imaging                                                  -->
+  <!-- 1.8.1.0 - img: - Imaging                                                  -->
   <!--   file:/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/dependencies -->
   <!-- 1.0.0.0 - msss_cam_mh: - MSSS Camera Mini-header                          -->
   <!--   file:/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/PDS4_MSSS_CA -->
@@ -60,7 +60,7 @@
       <xs:element ref="img:Focus" minOccurs="0" maxOccurs="1"> </xs:element>
       <xs:element ref="img:Onboard_Compression" minOccurs="0" maxOccurs="unbounded"> </xs:element>
       <xs:element ref="img:Optical_Filter" minOccurs="0" maxOccurs="unbounded"> </xs:element>
-      <xs:element name="Sampling" type="img:Sampling" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element ref="img:Sampling" minOccurs="0" maxOccurs="1"> </xs:element>
       <xs:element ref="img:Subframe" minOccurs="0" maxOccurs="1"> </xs:element>
       <xs:element ref="img:Instrument_State" minOccurs="0" maxOccurs="unbounded"> </xs:element>
     </xs:sequence>
