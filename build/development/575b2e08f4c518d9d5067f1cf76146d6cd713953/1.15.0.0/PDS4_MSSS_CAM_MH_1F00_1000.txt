@@ -1,18 +1,18 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        11.3.2
+   LDDTool Version        10.1.0
    LDD Version Id:        1.0.0.0
    LDD Label Version Id:  1.0
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Fri Aug 28 00:42:07 UTC 2020
-   Common Schema          [PDS4_PDS_1E00.xsd]
-   Common Schematron      [PDS4_PDS_1E00.sch]
-   IM Version Id:         1.14.0.0
+   Time                   Tue Sep 08 20:48:05 UTC 2020
+   Common Schema          [PDS4_PDS_1F00.xsd]
+   Common Schematron      [PDS4_PDS_1F00.sch]
+   IM Version Id:         1.15.0.0
    IM Namespace Id:       pds
-   IM Label Version Id:   1.20
+   IM Label Version Id:   1.21
    IM Object Model        [UpperModel.pont]
    IM Data Dictionary     [dd11179.pins]
    IM Configuration File  [MDPTNConfigClassDisp.xml]
@@ -33,41 +33,10 @@ Summary:
    Attributes             9
    Associations           17
    Error messages         0
-   Warning messages       24
-   Information messages   7
+   Warning messages       0
+   Information messages   0
 
 Detailed validation messages
-   INFO     Attribute: <spacecraft_clock_start> - A 'nilable' attribute was found that is not a required attribute in at least one class.
-   INFO     Attribute: <spacecraft_clock_stop> - A 'nilable' attribute was found that is not a required attribute in at least one class.
-   WARNING  Header:  - New namespace id has been specified:msss_cam_mh
-   WARNING  Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   WARNING  Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
-   INFO     Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
-   INFO     Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
-   INFO     Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
-   INFO     Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
-   INFO     Attribute: <instrument_serial_number> - This local attribute has a duplicate in the PDS4 data dictionary.
 
 Parsed Input - Header:
    LDD Name               MSSS Camera Mini-header
@@ -87,22 +56,22 @@ Parsed Input - Header:
 Parsed Input - Attributes:
 
    name                   camera_product_id
-   version                1.14
+   version                1.15
    value data type        ASCII_NonNegative_Integer
    description            Identifier assigned by the camera to this image (aka CDPID). The identifier is unique among all products stored on the camera at the time of acquisition, but is not necessarily unique across the mission.
 
    name                   magic_initial
-   version                1.14
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            Bit pattern (hexadecimal value) at the beginning of the mini-header used to help identify product boundaries for flash fault recovery. For MSL, this is a constant 0xFF00F0CA.
 
    name                   magic_final
-   version                1.14
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            Bit pattern (hexadecimal value) at the end of the mini-header used to help identify product boundaries for flash fault recovery. For MSL, this is a constant 0x1010CC28.
 
    name                   spacecraft_clock_start
-   version                1.14
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            The spacecraft_clock_start is the value of the spacecraft clock at the beginning of the observation.
    nillable               true
@@ -110,7 +79,7 @@ Parsed Input - Attributes:
    maximum characters     255
 
    name                   spacecraft_clock_stop
-   version                1.14
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            The spacecraft_clock_stop is the value of the spacecraft clock at the end of the observation. spacecraft_clock_stop should only be used if there's also a spacecraft_clock_start value.
    nillable               true
@@ -118,22 +87,22 @@ Parsed Input - Attributes:
    maximum characters     255
 
    name                   instrument_mode_id
-   version                1.14
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            Specifies the image or video readout mode, which determines the rate the image is read out.
 
    name                   instrument_serial_number
-   version                1.14
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            The instrument serial number element provides the manufacturer's serial number assigned to an instrument. This number may be used to uniquely identify a particular instrument for tracing its components or determining its calibration history, for example.
 
    name                   initial_size
-   version                1.14
+   version                1.15
    value data type        ASCII_NonNegative_Integer
    description            Initially-allocated size of data product by the camera (for compressed data, may not match actual size).
 
    name                   analog_offset
-   version                1.14
+   version                1.15
    value data type        ASCII_Integer
    description            The analog_offset attribute identifies the analog value that is subtracted from the signal prior to the analog/digital conversion.
 
