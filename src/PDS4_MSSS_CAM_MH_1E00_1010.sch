@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:msss_cam_mh  Version:1.0.0.0 - Wed Aug 26 17:39:55 MST 2020 -->
+  <!-- PDS4 Schematron for Name Space Id:msss_cam_mh  Version:1.0.1.0 - Fri Aug 28 20:21:32 MST 2020 -->
   <!-- Generated from the PDS4 Information Model Version 1.14.0.0 - System Build 10b -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">

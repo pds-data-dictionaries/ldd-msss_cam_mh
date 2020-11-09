@@ -2,12 +2,12 @@ PDS4 Local Data Dictionary Processing Report
 
 Configuration:
    LDDTool Version        11.3.2
-   LDD Version Id:        1.0.0.0
+   LDD Version Id:        1.0.1.0
    LDD Label Version Id:  1.0
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Wed Aug 26 17:39:55 MST 2020
+   Time                   Sat Aug 29 03:20:55 UTC 2020
    Common Schema          [PDS4_PDS_1E00.xsd]
    Common Schematron      [PDS4_PDS_1E00.sch]
    IM Version Id:         1.14.0.0
@@ -20,7 +20,7 @@ Configuration:
    IM Document Spec       [DMDocument.pins]
 
 Parameters:
-   Input File             [PDS4_MSSS_CAM_MH_IngestLDD.xml]
+   Input File             [/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/PDS4_MSSS_CAM_MH_IngestLDD.xml]
    PDS Processing         true
    LDD Processing         true
    Discipline LDD         true
@@ -87,7 +87,7 @@ Detailed validation messages
 
 Parsed Input - Header:
    LDD Name               MSSS Camera Mini-header
-   LDD Version            1.0.0.0
+   LDD Version            1.0.1.0
    Full Name              Trent Hare
    Steward                img
    Namespace Id           msss_cam_mh
@@ -95,9 +95,12 @@ Parsed Input - Header:
     ## CHANGE LOG ##
     1.0.0.0
     - Initial version
+    
+     1.0.1.0
+    - bump to use IMG v1E00_1810
 
   
-   Last Modification Time 2020-08-19T13:17:00
+   Last Modification Time 2020-08-27T17:00:00
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:

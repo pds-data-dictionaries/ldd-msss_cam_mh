@@ -15,7 +15,7 @@
                         https://pds.nasa.gov/pds4/img/v1 https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1E00_1810.xsd">
 
   <name>MSSS Camera Mini-header</name>
-  <ldd_version_id>1.0.0.0</ldd_version_id>
+  <ldd_version_id>1.0.1.0</ldd_version_id>
   <dictionary_type>Discipline</dictionary_type>
   <full_name>Trent Hare</full_name>
   <steward_id>img</steward_id>
@@ -24,9 +24,12 @@
     ## CHANGE LOG ##
     1.0.0.0
     - Initial version
+    
+     1.0.1.0
+    - bump to use IMG v1E00_1810
 
   </comment>
-  <last_modification_date_time>2020-08-19T13:17:00</last_modification_date_time>
+  <last_modification_date_time>2020-08-27T17:00:00</last_modification_date_time>
 
   <!-- Begin attribute definitions -->
 
