@@ -23,7 +23,7 @@ Steward: [IMG Node](https://pds-imaging.jpl.nasa.gov/)
 
 Only one LDD source version is kept such that it can be managed by github.
 
-- [1.E.0.0](src)
+- [1.0.2.0](src)
 
 ## Versions
 
@@ -34,8 +34,9 @@ The build process insures compatiblity of the LDD with the core information mode
 
 This LDD has been built for the following versions of the PDS4 information models.
 
-- [PDS4 IM v1.E.0.0 (IMG LDD v1.0.0.0)](build/1.E.0.0_1.0.0.0)
-- [PDS4 IM v1.D.0.0 (IMG LDD v1.0.0.0)](build/1.D.0.0_1.0.0.0)
+- [PDS4 IM v1.E.0.0 (MSSS_CAM_MH LDD v1.0.2.0)](build/development)
+- [PDS4 IM v1.E.0.0 (MSSS_CAM_MH LDD v1.0.1.0)](build/release/1.E.0.0_1.0.1.0)
+- [PDS4 IM v1.D.0.0 (MSSS_CAM_MH LDD v1.0.0.0)](build/release/1.D.0.0_1.0.0.0)
 
 ## Notes
 
