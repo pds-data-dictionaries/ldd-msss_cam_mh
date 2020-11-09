@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:msss_cam_mh  Version:1.0.1.0 - Sat Aug 29 03:20:55 UTC 2020 -->
+  <!-- PDS4 XML/Schema for Name Space Id:msss_cam_mh  Version:1.0.2.0 - Mon Nov 09 16:10:35 UTC 2020 -->
   <!-- Generated from the PDS4 Information Model Version 1.14.0.0 - System Build 10b -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
   <!--               Dictionary Stack                                            -->
   <!-- 1.14.0.0 - pds: - Common Dictionary                                       -->
-  <!-- 1.8.1.0 - img: - Imaging                                                  -->
+  <!-- 1.8.2.0 - img: - Imaging                                                  -->
   <!--   file:/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/dependencies -->
-  <!-- 1.8.1.0 - img: - Imaging                                                  -->
+  <!-- 1.8.2.0 - img: - Imaging                                                  -->
   <!--   file:/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/dependencies -->
-  <!-- 1.0.1.0 - msss_cam_mh: - MSSS Camera Mini-header                          -->
+  <!-- 1.0.2.0 - msss_cam_mh: - MSSS Camera Mini-header                          -->
   <!--   file:/home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/PDS4_MSSS_CA -->
   <!--                                                                           -->
   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -19,10 +19,10 @@
     xmlns:img="http://pds.nasa.gov/pds4/img/v1"
     elementFormDefault="qualified"
     attributeFormDefault="unqualified"
-    version="1.0.1.0">
+    version="1.0.2.0">
  
     <xs:import namespace="http://pds.nasa.gov/pds4/pds/v1" schemaLocation="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd"/>
-    <xs:import namespace="http://pds.nasa.gov/pds4/img/v1" schemaLocation="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1E00_1600.xsd"/>
+    <xs:import namespace="http://pds.nasa.gov/pds4/img/v1" schemaLocation="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1E00_1E00.xsd"/>
  
   <xs:annotation>
     <xs:documentation>
@@ -33,6 +33,9 @@
     
      1.0.1.0
     - bump to use IMG v1E00_1810
+
+    1.0.2.0
+    - bump to use IMG v1E00_1820
 
   
     </xs:documentation>
