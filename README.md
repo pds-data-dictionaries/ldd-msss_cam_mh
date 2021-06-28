@@ -19,11 +19,9 @@ this dictionary is specific to this particular class of cameras.
 
 Steward: [IMG Node](https://pds-imaging.jpl.nasa.gov/)
 
-## Current Source
-
 Only one LDD source version is kept such that it can be managed by github.
 
-- [1.0.2.0](src)
+- [src](src)
 
 ## Versions
 
@@ -32,11 +30,12 @@ The build process insures compatiblity of the LDD with the core information mode
 
 ## Builds
 
-This LDD has been built for the following versions of the PDS4 information models.
 
-- [PDS4 IM v1.E.0.0 (MSSS_CAM_MH LDD v1.0.2.0)](build/development)
-- [PDS4 IM v1.E.0.0 (MSSS_CAM_MH LDD v1.0.1.0)](build/release/1.E.0.0_1.0.1.0)
-- [PDS4 IM v1.D.0.0 (MSSS_CAM_MH LDD v1.0.0.0)](build/release/1.D.0.0_1.0.0.0)
+This LDD has been released for the following versions of the PDS4 information model:
+
+- [development](build/development/)
+- [releases](build/release/)
+
 
 ## Notes
 
@@ -54,3 +53,4 @@ Have a bug or feature request? Create one in the [PDS4 Issue Repo](https://githu
 # Support
 
 See the [PDS Data Dictionaries Support page](https://pds-data-dictionaries.github.io/support/) for more Support information.
+
