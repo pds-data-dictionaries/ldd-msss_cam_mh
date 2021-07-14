@@ -1,0 +1,1056 @@
+
+>>  INFO The configured IM Versions are:[1G00, 1F00, 1E00, 1D00, 1C00, 1B10, 1B00]
+>>  INFO The provided IM Version 1G00 is valid
+>>  INFO LDDTOOL Version: 13.0.2
+>>  INFO IM Version Id: 1.16.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.0
+>>  INFO Date: Mon Jun 28 23:58:10 UTC 2021
+>>  INFO PARENT_DIR: /tmp/lddtool-13.0.2
+>>  INFO SCRIPT_DIR: /tmp/lddtool-13.0.2/bin
+>>  INFO LIB_DIR: /tmp/lddtool-13.0.2/lib
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:img
+>>> INFO Init:  - Config.Properties Namespace Id Using:img
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <temperature_value> - A 'nilable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Init:  - Config.Properties Namespace Id Found:img
+>>> INFO Init:  - Config.Properties Namespace Id Using:img
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <temperature_value> - A 'nilable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Init:  - Config.Properties Namespace Id Using:pds
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <spacecraft_clock_start> - A 'nilable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <spacecraft_clock_stop> - A 'nilable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <crosstrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <decomposition_stages> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <detector_to_image_rotation> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <detector_to_image_rotation> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <downtrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <exposure_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_coadd_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_readout_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <filter_id> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_id> - The default maximum characters provided by the attribute's data type is being overridden with 16
+>>> INFO Attribute: <filter_name> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <first_line> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <first_sample> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <hdr_frame_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <hdr_clipping_threshold> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <height_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <icer_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <icer_quality> - The default maximum value provided by the attribute's data type is being overridden with 18
+>>> INFO Attribute: <interframe_delay> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <instrument_idle_timeout> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <line_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <line_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <observation_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default maximum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <onboard_compression_rate> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_ratio> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <onboard_compression_type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <onboard_compression_venue> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_venue> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <progressive_stage> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <horizon_mask_elevation> - The default minimum value provided by the attribute's data type is being overridden with -90.0
+>>> INFO Attribute: <horizon_mask_elevation> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <sample_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <sample_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <segment_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <segment_status> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <segment_status> - The default maximum characters provided by the attribute's data type is being overridden with 6
+>>> INFO Attribute: <special_line> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <special_sample> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_overlap_rows> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_num_bands> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_number> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_line_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_sample_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <width_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <crosstrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <decomposition_stages> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <detector_to_image_rotation> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <detector_to_image_rotation> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <downtrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <exposure_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_coadd_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_readout_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <filter_id> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_id> - The default maximum characters provided by the attribute's data type is being overridden with 16
+>>> INFO Attribute: <filter_name> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <first_line> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <first_sample> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <hdr_frame_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <hdr_clipping_threshold> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <height_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <icer_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <icer_quality> - The default maximum value provided by the attribute's data type is being overridden with 18
+>>> INFO Attribute: <interframe_delay> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <instrument_idle_timeout> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <line_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <line_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <observation_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default maximum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <onboard_compression_rate> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_ratio> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <onboard_compression_type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <onboard_compression_venue> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_venue> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <progressive_stage> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <horizon_mask_elevation> - The default minimum value provided by the attribute's data type is being overridden with -90.0
+>>> INFO Attribute: <horizon_mask_elevation> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <sample_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <sample_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <segment_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <segment_status> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <segment_status> - The default maximum characters provided by the attribute's data type is being overridden with 6
+>>> INFO Attribute: <special_line> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <special_sample> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_overlap_rows> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_num_bands> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_number> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_line_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_sample_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <width_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <instrument_serial_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> WARNING Attribute: <color_component> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Attribute: <color_space> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Attribute: <frame_id> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <frame_interval> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <interframe_delay> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <processing_venue> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Header:  - New namespace id has been specified:img
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <High_Dynamic_Range> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <High_Dynamic_Range> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Attribute: <color_component> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Attribute: <color_space> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Attribute: <frame_id> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <frame_interval> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <interframe_delay> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <processing_venue> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Header:  - New namespace id has been specified:img
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Imaging
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Autoexposure
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Brightness_Correction
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Brightness_Correction_File
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Brightness_Correction_Image
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Brightness_Correction_HSI_Linear
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Brightness_Correction_Linear
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Color_Filter_Array
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Color_Processing
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Commanded_Parameters
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Companding
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Companding_File
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Companding_Table
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Companding_Table_Mapping
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Dark_Current_Correction
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Onboard_Compression
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Correction_Parameter
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Data_Processing
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Data_Processing_File
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Image_Mask
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Image_Mask_File
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Detector
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Component_States
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Component_State
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Currents
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Current
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Motor_Counts
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Motor_Count
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Parameters
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Temperatures
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Temperature
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Voltages
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Device_Voltage
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Downsampling
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Exposure
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Optical_Filter
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Flat_Field_Correction
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Flat_Field_File
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Focus
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Focus_Stack
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Frame
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.ICER_Parameters
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Illumination
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.LED_Illumination_Source
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Instrument_State
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.JPEG_Parameters
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.JPEG_Progressive_Parameters
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.LOCO_Parameters
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Onboard_Responsivity
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Optical_Properties
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Pixel_Averaging_Dimensions
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Pointing_Correction
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Pointing_Correction_File
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Pointing_Correction_Image
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Pointing_Model_Parameter
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Radiometric_Correction
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Reference_Pixel
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Histogram
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Col_Sum
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Row_Sum
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Sampling
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Shutter_Subtraction
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Special_Point
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Subframe
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Thumbnail
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Video
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Spatial_Filter
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Tile
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Tiling
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.Image_Filter
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range
+>>> WARNING Found duplicate class - lClass.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range_Exposure
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_data_cut
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_percent
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_pixel_fraction
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_lower_threshold
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_lower_limit
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_roi_first_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_roi_first_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_roi_lines
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_roi_samples
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_upper_threshold
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_upper_limit
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.max_auto_exposure_iteration_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.exposure_table
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.exposure_table_update_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.valid_maximum_pixel
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Autoexposure.img.valid_minimum_pixel
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Brightness_Correction_HSI_Linear.img.brightness_scale
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Brightness_Correction_HSI_Linear.img.brightness_offset
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Brightness_Correction_Linear.img.brightness_scale
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Brightness_Correction_Linear.img.brightness_offset
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Color_Filter_Array.img.color_filter_array_type
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Color_Filter_Array.img.color_filter_array_state
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Color_Processing.img.color_space
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Color_Processing.img.color_component
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Color_Processing.img.illuminant
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Color_Processing.img.encoded_display_gamma
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Color_Processing.img.color_dn_scaling_method
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Color_Processing.img.color_dn_scaling_factor
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.pds.description
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Companding.img.companding_state
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Companding.img.early_scaling
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Companding_Table_Mapping.img.input_dn_min
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Companding_Table_Mapping.img.input_dn_max
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Companding_Table_Mapping.img.output_dn
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Dark_Current_Correction.img.striping_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Dark_Current_Correction.img.striping_overlap_rows
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_class
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_mode
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_type
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_rate
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_ratio
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_quality
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_venue
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.deferred_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.error_pixel_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Data_Processing.img.active_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Data_Processing.img.processing_venue
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Data_Processing.img.processing_algorithm
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Data_Processing.img.sequence_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Data_Processing_File.pds.description
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Data_Processing_File.pds.name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask.img.active_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask.img.horizon_mask_elevation
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask.img.processing_venue
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask.img.processing_algorithm
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask.img.sequence_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask_File.pds.description
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask_File.pds.name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask_File.img.mask_type
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask_File.img.horizon_mask_elevation
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Mask_File.img.mask_transparent_value
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.first_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.first_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.lines
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.samples
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.detector_to_image_rotation
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.detector_to_image_flip
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.erase_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.readout_rate
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.gain_mode_id
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.gain_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.analog_offset
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.bad_pixel_replacement_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.bad_pixel_replacement_table_id
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.instrument_idle_timeout
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.early_image_return
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Detector.img.parameter_table_id
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Component_State.img.device_state
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Current.img.current_value
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Motor_Count.img.motor_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Parameters.img.device_name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Parameters.img.device_id
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Parameters.img.sequence_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Temperature.img.raw_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Temperature.img.temperature_value
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Temperature.img.temperature_status
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Device_Voltage.img.voltage_value
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_duration
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_duration_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_type
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_scale_factor
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_coadd_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_readout_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.filter_name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.filter_id
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.filter_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.filter_position_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.bandwidth
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.center_filter_wavelength
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.array_band_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Filter.pds.comment
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.focus_mode
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.focus_position
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.focus_position_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.autofocus_step_size
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.autofocus_step_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.focus_distance
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.focus_initialization_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.minimum_focus_distance
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.best_focus_distance
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus.img.maximum_focus_distance
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.focus_stack_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.frame_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.frame_index
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.focus_merge_blending_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.focus_merge_registration_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.delta_focus_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Frame.img.frame_id
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Frame.img.frame_type_name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Frame.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Frame.img.observation_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.ICER_Parameters.img.wavelet_filter
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.ICER_Parameters.img.icer_quality
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.ICER_Parameters.img.decomposition_stages
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.ICER_Parameters.img.segment_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Illumination.pds.name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Illumination.img.illumination_mode
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.LED_Illumination_Source.pds.name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.LED_Illumination_Source.pds.description
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.LED_Illumination_Source.img.illumination_state
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.LED_Illumination_Source.img.illumination_wavelength
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.segment_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.first_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.first_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.lines
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.samples
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.segment_quality
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.segment_status
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.missing_pixel_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.JPEG_Parameters.img.color_subsampling_mode
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.JPEG_Parameters.img.jpeg_quality
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.JPEG_Parameters.img.jpeg_parameter
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.JPEG_Progressive_Parameters.img.progressive_stage
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.img.sequence_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.pds.name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.img.id
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.img.value_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.img.value_string
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.LOCO_Parameters.img.wavelet_filter
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.LOCO_Parameters.img.missing_pixel_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.LOCO_Parameters.img.segment_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_R_r
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_R_g
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_R_b
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_G_r
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_G_g
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_G_b
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_B_r
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_B_g
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_B_b
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Responsivity.img.responsivity_factor_r
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Responsivity.img.responsivity_factor_g
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Onboard_Responsivity.img.responsivity_factor_b
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Properties.img.focal_length
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Properties.img.f_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Optical_Properties.img.zoom_position
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Pixel_Averaging_Dimensions.img.height_pixels
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Pixel_Averaging_Dimensions.img.width_pixels
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Pointing_Correction_Image.img.pointing_model_name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Pointing_Correction_Image.img.pointing_model_solution_id
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Pointing_Model_Parameter.pds.name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Pointing_Model_Parameter.pds.value
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.x_center
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.y_center
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.r0
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.r1
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.r2
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.r3
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.radiometric_type
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.radiometric_zenith_scaling_factor
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.responsivity_r
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.responsivity_g
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.responsivity_b
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.responsivity_pan
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.atmospheric_opacity
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.atmospheric_opacity_reference
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.pds.comment
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Reference_Pixel.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Reference_Pixel.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Histogram.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Histogram.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Col_Sum.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Col_Sum.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Row_Sum.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Row_Sum.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Sampling.img.crosstrack_summing
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Sampling.img.downtrack_summing
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Sampling.img.missing_pixel_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Sampling.img.original_sample_bits
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Sampling.img.sample_bits
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Sampling.img.sample_bit_mask
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Sampling.img.sampling_factor
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Sampling.img.saturated_pixel_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Sampling.img.valid_pixel_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Shutter_Subtraction.img.shutter_subtraction_mode
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Shutter_Subtraction.img.exposure_duration_threshold_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Special_Point.pds.name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Special_Point.pds.description
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Special_Point.img.special_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Special_Point.img.special_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Subframe.img.first_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Subframe.img.first_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Subframe.img.lines
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Subframe.img.samples
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Subframe.img.line_fov
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Subframe.img.sample_fov
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Subframe.pds.name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Subframe.pds.description
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Subframe.img.subframe_type
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Thumbnail.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Thumbnail.img.frame_id
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Thumbnail.img.frame_type_name
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Thumbnail.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Video.img.video_flag
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Video.img.frame_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Video.img.interframe_delay
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Video.img.frame_rate
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Video.img.frame_interval
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Video.img.frame_index
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Video.img.gop_frame_index
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Video.img.gop_frame_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Video.img.gop_start_index
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.filter_window_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.max_filter_window_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.max_filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.min_filter_window_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.min_filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tile.img.tile_number
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tile.img.tile_num_bands
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tile.img.tile_upsample_method
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tiling.pds.description
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tiling.img.num_line_tiles
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tiling.img.num_sample_tiles
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_lines
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_samples
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_type
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_venue
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Filter.img.filter_window_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Filter.img.filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Filter.img.max_filter_window_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Filter.img.max_filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Filter.img.min_filter_window_line
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.Image_Filter.img.min_filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range.img.hdr_acquisition_mode
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range.img.hdr_frame_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range.img.hdr_clipping_threshold
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range_Exposure.img.exposure_duration
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range_Exposure.img.exposure_duration_count
+>>> WARNING Found duplicate attribute - lDOMAttr.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range_Exposure.img.exposure_time_delta
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.pds.Local_Internal_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Brightness_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Col_Sum
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Color_Filter_Array
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Color_Processing
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Dark_Current_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Detector
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Downsampling
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Exposure
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Flat_Field_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Focus
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Focus_Stack
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Frame
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.High_Dynamic_Range
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Histogram
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Illumination
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Image_Filter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Image_Mask
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Onboard_Compression
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Optical_Filter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Optical_Properties
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Pointing_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Radiometric_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Reference_Pixel
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Row_Sum
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Sampling
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Shutter_Subtraction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Spatial_Filter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Subframe
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Tiling
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Thumbnail
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Video
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Instrument_State
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Imaging.img.Commanded_Parameters
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_data_cut
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_percent
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_pixel_fraction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_lower_threshold
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_lower_limit
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_roi_first_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_roi_first_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_roi_lines
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_roi_samples
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_upper_threshold
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.auto_exposure_upper_limit
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.max_auto_exposure_iteration_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.exposure_table
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.exposure_table_update_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.valid_maximum_pixel
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Autoexposure.img.valid_minimum_pixel
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Brightness_Correction.img.Brightness_Correction_File
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Brightness_Correction.img.Brightness_Correction_Image
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Brightness_Correction_Image.pds.Internal_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Brightness_Correction_Image.img.Brightness_Correction_Linear
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Brightness_Correction_Image.img.Brightness_Correction_HSI_Linear
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Brightness_Correction_HSI_Linear.img.brightness_scale
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Brightness_Correction_HSI_Linear.img.brightness_offset
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Brightness_Correction_Linear.img.brightness_scale
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Brightness_Correction_Linear.img.brightness_offset
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Filter_Array.img.color_filter_array_type
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Filter_Array.img.color_filter_array_state
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Processing.img.color_space
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Processing.img.color_component
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Processing.img.illuminant
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Processing.img.encoded_display_gamma
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Processing.img.color_dn_scaling_method
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Processing.img.color_dn_scaling_factor
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Processing.img.Onboard_Responsivity
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Color_Processing.img.Onboard_Color_Matrix
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.pds.description
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Brightness_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Col_Sum
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Color_Filter_Array
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Color_Processing
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Dark_Current_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Detector
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Downsampling
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Exposure
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Flat_Field_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Focus
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Focus_Stack
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Frame
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.High_Dynamic_Range
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Histogram
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Illumination
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Image_Filter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Image_Mask
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Onboard_Compression
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Optical_Filter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Optical_Properties
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Pointing_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Radiometric_Correction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Reference_Pixel
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Row_Sum
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Sampling
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Shutter_Subtraction
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Spatial_Filter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Subframe
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Thumbnail
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Tiling
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Commanded_Parameters.img.Video
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Companding.img.companding_state
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Companding.img.early_scaling
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Companding.img.Companding_File
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Companding.img.Companding_Table
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Companding_Table.img.Companding_Table_Mapping
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Companding_Table_Mapping.img.input_dn_min
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Companding_Table_Mapping.img.input_dn_max
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Companding_Table_Mapping.img.output_dn
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Dark_Current_Correction.img.striping_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Dark_Current_Correction.img.striping_overlap_rows
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_class
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_mode
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_type
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_rate
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_ratio
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_quality
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.onboard_compression_venue
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.deferred_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.error_pixel_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.ICER_Parameters
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.LOCO_Parameters
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.JPEG_Parameters
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Compression.img.JPEG_Progressive_Parameters
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Data_Processing.img.active_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Data_Processing.img.processing_venue
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Data_Processing.img.processing_algorithm
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Data_Processing.img.sequence_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Data_Processing_File.pds.description
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Data_Processing_File.pds.Internal_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Data_Processing_File.pds.External_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Data_Processing_File.pds.name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask.img.active_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask.img.horizon_mask_elevation
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask.img.processing_venue
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask.img.processing_algorithm
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask.img.sequence_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask.img.Image_Mask_File
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask_File.pds.description
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask_File.pds.Internal_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask_File.pds.External_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask_File.pds.name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask_File.img.mask_type
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask_File.img.horizon_mask_elevation
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Mask_File.img.mask_transparent_value
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.first_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.first_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.lines
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.samples
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.detector_to_image_rotation
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.detector_to_image_flip
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.erase_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.readout_rate
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.gain_mode_id
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.gain_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.analog_offset
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.bad_pixel_replacement_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.bad_pixel_replacement_table_id
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.instrument_idle_timeout
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.early_image_return
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.parameter_table_id
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.img.Special_Point
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Detector.pds.Internal_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Component_States.img.Device_Component_State
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Component_State.img.device_state
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Currents.img.Device_Current
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Current.img.current_value
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Motor_Counts.img.Device_Motor_Count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Motor_Count.img.motor_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Parameters.img.device_name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Parameters.img.device_id
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Parameters.img.sequence_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Temperatures.img.Device_Temperature
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Temperature.img.raw_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Temperature.img.temperature_value
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Temperature.img.temperature_status
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Voltages.img.Device_Voltage
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Device_Voltage.img.voltage_value
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Downsampling.img.Pixel_Averaging_Dimensions
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_duration
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_duration_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_type
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_scale_factor
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_coadd_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Exposure.img.exposure_readout_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Exposure.img.Autoexposure
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.filter_name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.filter_id
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.filter_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.filter_position_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.bandwidth
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.center_filter_wavelength
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Filter.img.array_band_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Filter.pds.comment
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Filter.pds.Local_Internal_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Flat_Field_Correction.img.Radial_Flat_Field_Function
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Flat_Field_Correction.img.Flat_Field_File
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.focus_mode
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.focus_position
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.focus_position_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.autofocus_step_size
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.autofocus_step_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.focus_distance
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.focus_initialization_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.minimum_focus_distance
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.best_focus_distance
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus.img.maximum_focus_distance
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.focus_stack_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.frame_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.frame_index
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.focus_merge_blending_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.focus_merge_registration_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Focus_Stack.img.delta_focus_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Frame.img.frame_id
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Frame.img.frame_type_name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Frame.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Frame.img.observation_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.ICER_Parameters.img.wavelet_filter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.ICER_Parameters.img.icer_quality
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.ICER_Parameters.img.decomposition_stages
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.ICER_Parameters.img.segment_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.ICER_Parameters.img.Image_Compression_Segment
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Illumination.pds.name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Illumination.img.illumination_mode
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Illumination.img.LED_Illumination_Source
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.LED_Illumination_Source.pds.name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.LED_Illumination_Source.pds.description
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.LED_Illumination_Source.img.illumination_state
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.LED_Illumination_Source.img.illumination_wavelength
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.segment_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.first_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.first_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.lines
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.samples
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.segment_quality
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.segment_status
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Compression_Segment.img.missing_pixel_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Instrument_State.img.Device_Component_States
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Instrument_State.img.Device_Currents
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Instrument_State.img.Device_Motor_Counts
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Instrument_State.img.Device_Temperatures
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Instrument_State.img.Device_Voltages
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.JPEG_Parameters.img.color_subsampling_mode
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.JPEG_Parameters.img.jpeg_quality
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.JPEG_Parameters.img.jpeg_parameter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.JPEG_Parameters.img.Image_Compression_Segment
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.JPEG_Progressive_Parameters.img.progressive_stage
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.img.sequence_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.pds.name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.img.id
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.img.value_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.List_Index_No_Units_Imaging.img.value_string
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.LOCO_Parameters.img.wavelet_filter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.LOCO_Parameters.img.missing_pixel_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.LOCO_Parameters.img.segment_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.LOCO_Parameters.img.Image_Compression_Segment
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_R_r
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_R_g
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_R_b
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_G_r
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_G_g
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_G_b
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_B_r
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_B_g
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Color_Matrix.img.onboard_B_b
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Responsivity.img.responsivity_factor_r
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Responsivity.img.responsivity_factor_g
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Onboard_Responsivity.img.responsivity_factor_b
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Properties.img.focal_length
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Properties.img.f_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Optical_Properties.img.zoom_position
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Pixel_Averaging_Dimensions.img.height_pixels
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Pixel_Averaging_Dimensions.img.width_pixels
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Pointing_Correction.img.Pointing_Correction_File
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Pointing_Correction.img.Pointing_Correction_Image
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Pointing_Correction_Image.img.pointing_model_name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Pointing_Correction_Image.img.pointing_model_solution_id
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Pointing_Correction_Image.img.Pointing_Model_Parameter
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Pointing_Model_Parameter.pds.name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Pointing_Model_Parameter.pds.value
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.x_center
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.y_center
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.r0
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.r1
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.r2
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.r3
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radial_Flat_Field_Function.img.Flat_Field_File
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.radiometric_type
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.radiometric_zenith_scaling_factor
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.responsivity_r
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.responsivity_g
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.responsivity_b
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.responsivity_pan
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.atmospheric_opacity
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.img.atmospheric_opacity_reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Radiometric_Correction.pds.comment
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Reference_Pixel.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Reference_Pixel.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Reference_Pixel.img.Onboard_Compression
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Histogram.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Histogram.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Col_Sum.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Col_Sum.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Row_Sum.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Row_Sum.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.crosstrack_summing
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.downtrack_summing
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.missing_pixel_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.original_sample_bits
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.sample_bits
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.sample_bit_mask
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.sampling_factor
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.saturated_pixel_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.valid_pixel_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Sampling.img.Companding
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Shutter_Subtraction.img.shutter_subtraction_mode
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Shutter_Subtraction.img.exposure_duration_threshold_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Special_Point.pds.name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Special_Point.pds.description
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Special_Point.img.special_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Special_Point.img.special_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Subframe.img.first_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Subframe.img.first_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Subframe.img.lines
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Subframe.img.samples
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Subframe.img.line_fov
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Subframe.img.sample_fov
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Subframe.pds.name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Subframe.pds.description
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Subframe.img.subframe_type
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Thumbnail.img.download_priority
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Thumbnail.img.frame_id
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Thumbnail.img.frame_type_name
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Thumbnail.img.product_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Thumbnail.img.Onboard_Compression
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Thumbnail.img.Sampling
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Thumbnail.img.Subframe
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.img.video_flag
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.img.frame_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.img.interframe_delay
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.img.frame_rate
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.img.frame_interval
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.img.frame_index
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.img.gop_frame_index
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.img.gop_frame_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.img.gop_start_index
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.pds.Internal_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Video.pds.External_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.filter_window_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.max_filter_window_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.max_filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.min_filter_window_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Spatial_Filter.img.min_filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tile.img.tile_number
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tile.img.tile_num_bands
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tile.img.tile_upsample_method
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tile.pds.Internal_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tile.pds.Local_Internal_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tile.pds.External_Reference
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tile.img.Pixel_Averaging_Dimensions
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tile.img.Subframe
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tiling.pds.description
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tiling.img.num_line_tiles
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tiling.img.num_sample_tiles
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_lines
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_samples
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_type
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tiling.img.tile_venue
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Tiling.img.Tile
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Filter.img.filter_window_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Filter.img.filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Filter.img.max_filter_window_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Filter.img.max_filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Filter.img.min_filter_window_line
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.Image_Filter.img.min_filter_window_sample
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:TBD_identifier
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range.img.hdr_acquisition_mode
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range.img.hdr_frame_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range.img.hdr_clipping_threshold
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range.img.High_Dynamic_Range_Exposure
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range_Exposure.img.exposure_duration
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range_Exposure.img.exposure_duration_count
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range_Exposure.img.exposure_time_delta
+>>> WARNING Found duplicate attribute - lDOMProp.identifier:0001_NASA_PDS_1.img.High_Dynamic_Range_Exposure.pds.Internal_Reference
+>>> WARNING Found duplicate attribute - lAttr.identifier:color_filter_array_state_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:color_processing_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:commanded_params_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:detector_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:downsampling_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:exposure_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:ext_reference_type_check_video
+>>> WARNING Found duplicate attribute - lAttr.identifier:focus_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:focus_stack_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:frame_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:icer_comprs_segment_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:icer_params_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:imaging_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:inst_state_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:int_reference_type_check_video
+>>> WARNING Found duplicate attribute - lAttr.identifier:jpeg_params_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:local_reference_type_check_img
+>>> WARNING Found duplicate attribute - lAttr.identifier:local_reference_type_check_optical_filter
+>>> WARNING Found duplicate attribute - lAttr.identifier:loco_params_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:onboard_compression_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:optical_filter_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:reference_type_check_brightness_correction_image
+>>> WARNING Found duplicate attribute - lAttr.identifier:reference_type_check_detector
+>>> WARNING Found duplicate attribute - lAttr.identifier:reference_type_check_hdre
+>>> WARNING Found duplicate attribute - lAttr.identifier:reference_type_check_tile
+>>> WARNING Found duplicate attribute - lAttr.identifier:sampling_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:shutter_subtraction_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:subframe_child_check
+>>> WARNING Found duplicate attribute - lAttr.identifier:video_child_check
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <High_Dynamic_Range> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <High_Dynamic_Range> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Init:  - Config.Properties Namespace Id Not Found:msss_cam_mh
+>>> WARNING Header:  - New namespace id has been specified:msss_cam_mh
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <High_Dynamic_Range> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <High_Dynamic_Range> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+
+ -- LDDTool Execution Summary --
+     900 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+>>  INFO Exit(0)
