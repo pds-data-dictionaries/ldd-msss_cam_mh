@@ -1,0 +1,833 @@
+
+>>  INFO LDDTOOL Version: 14.1.2
+>>  INFO IM Version Id: 1.18.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.24
+>>  INFO Date: Thu Oct 20 21:53:47 UTC 2022
+>>  INFO PARENT_DIR: /tmp/lddtool-14.1.2
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.1.2/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.1.2/lib
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:img
+>>> INFO Init:  - Config.Properties Namespace Id Using:img
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Init:  - Config.Properties Namespace Id Found:img
+>>> INFO Init:  - Config.Properties Namespace Id Using:img
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Init:  - Config.Properties Namespace Id Using:pds
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <responsivity_b> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <responsivity_g> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <responsivity_pan> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <responsivity_r> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <responsivity_std> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <temperature_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <responsivity_b> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <responsivity_g> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <responsivity_pan> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <responsivity_r> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <responsivity_std> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <temperature_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <spacecraft_clock_start> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <spacecraft_clock_stop> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <crosstrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <decomposition_stages> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <detector_to_image_rotation> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <detector_to_image_rotation> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <downtrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <exposure_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_coadd_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_readout_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <filter_id> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_id> - The default maximum characters provided by the attribute's data type is being overridden with 16
+>>> INFO Attribute: <filter_name> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <first_line> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <first_sample> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <hdr_frame_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <hdr_clipping_threshold> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <height_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <icer_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <icer_quality> - The default maximum value provided by the attribute's data type is being overridden with 18
+>>> INFO Attribute: <interframe_delay> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <instrument_idle_timeout> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <line_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <line_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <observation_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default maximum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <onboard_compression_rate> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_ratio> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <onboard_compression_type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <onboard_compression_venue> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_venue> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <progressive_stage> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <horizon_mask_elevation> - The default minimum value provided by the attribute's data type is being overridden with -90.0
+>>> INFO Attribute: <horizon_mask_elevation> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <sample_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <sample_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <segment_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <segment_status> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <segment_status> - The default maximum characters provided by the attribute's data type is being overridden with 6
+>>> INFO Attribute: <special_line> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <special_sample> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default maximum value provided by the attribute's data type is being overridden with 8
+>>> INFO Attribute: <starpixel_degradation> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_degradation> - The default maximum value provided by the attribute's data type is being overridden with 32
+>>> INFO Attribute: <striping_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_overlap_rows> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_num_bands> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_number> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_line_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_sample_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <width_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_bayer_cell> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <crosstrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <decomposition_stages> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <detector_to_image_rotation> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <detector_to_image_rotation> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <downtrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <exposure_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_coadd_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_readout_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <filter_id> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_id> - The default maximum characters provided by the attribute's data type is being overridden with 16
+>>> INFO Attribute: <filter_name> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <first_line> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <first_sample> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <hdr_frame_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <hdr_clipping_threshold> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <height_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <icer_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <icer_quality> - The default maximum value provided by the attribute's data type is being overridden with 18
+>>> INFO Attribute: <interframe_delay> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <instrument_idle_timeout> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <line_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <line_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <observation_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default maximum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <onboard_compression_rate> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_ratio> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <onboard_compression_type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <onboard_compression_venue> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_venue> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <progressive_stage> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <horizon_mask_elevation> - The default minimum value provided by the attribute's data type is being overridden with -90.0
+>>> INFO Attribute: <horizon_mask_elevation> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <sample_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <sample_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <segment_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <segment_status> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <segment_status> - The default maximum characters provided by the attribute's data type is being overridden with 6
+>>> INFO Attribute: <special_line> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <special_sample> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default maximum value provided by the attribute's data type is being overridden with 8
+>>> INFO Attribute: <starpixel_degradation> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_degradation> - The default maximum value provided by the attribute's data type is being overridden with 32
+>>> INFO Attribute: <striping_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_overlap_rows> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_num_bands> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_number> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_line_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_sample_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <width_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_bayer_cell> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <instrument_serial_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <crosstrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <decomposition_stages> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <detector_to_image_rotation> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <detector_to_image_rotation> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <downtrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <exposure_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_coadd_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_readout_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <filter_id> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_id> - The default maximum characters provided by the attribute's data type is being overridden with 16
+>>> INFO Attribute: <filter_name> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <first_line> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <first_sample> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <hdr_frame_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <hdr_clipping_threshold> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <height_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <icer_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <icer_quality> - The default maximum value provided by the attribute's data type is being overridden with 18
+>>> INFO Attribute: <interframe_delay> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <instrument_idle_timeout> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <line_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <line_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <observation_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default maximum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <onboard_compression_rate> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_ratio> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <onboard_compression_type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <onboard_compression_venue> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_venue> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <progressive_stage> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <horizon_mask_elevation> - The default minimum value provided by the attribute's data type is being overridden with -90.0
+>>> INFO Attribute: <horizon_mask_elevation> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <sample_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <sample_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <segment_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <segment_status> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <segment_status> - The default maximum characters provided by the attribute's data type is being overridden with 6
+>>> INFO Attribute: <special_line> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <special_sample> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default maximum value provided by the attribute's data type is being overridden with 8
+>>> INFO Attribute: <starpixel_degradation> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_degradation> - The default maximum value provided by the attribute's data type is being overridden with 32
+>>> INFO Attribute: <striping_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_overlap_rows> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_num_bands> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_number> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_line_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_sample_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <width_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_bayer_cell> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <crosstrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <decomposition_stages> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <detector_to_image_rotation> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <detector_to_image_rotation> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <downtrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <exposure_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_coadd_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_readout_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <filter_id> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_id> - The default maximum characters provided by the attribute's data type is being overridden with 16
+>>> INFO Attribute: <filter_name> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <first_line> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <first_sample> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <hdr_frame_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <hdr_clipping_threshold> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <height_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <icer_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <icer_quality> - The default maximum value provided by the attribute's data type is being overridden with 18
+>>> INFO Attribute: <interframe_delay> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <instrument_idle_timeout> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <line_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <line_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <observation_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default maximum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <onboard_compression_rate> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_ratio> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <onboard_compression_type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <onboard_compression_venue> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_venue> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <progressive_stage> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <horizon_mask_elevation> - The default minimum value provided by the attribute's data type is being overridden with -90.0
+>>> INFO Attribute: <horizon_mask_elevation> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <sample_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <sample_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <segment_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <segment_status> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <segment_status> - The default maximum characters provided by the attribute's data type is being overridden with 6
+>>> INFO Attribute: <special_line> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <special_sample> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default maximum value provided by the attribute's data type is being overridden with 8
+>>> INFO Attribute: <starpixel_degradation> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_degradation> - The default maximum value provided by the attribute's data type is being overridden with 32
+>>> INFO Attribute: <striping_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_overlap_rows> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_num_bands> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_number> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_line_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_sample_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <width_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_bayer_cell> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <instrument_serial_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <crosstrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <decomposition_stages> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <detector_to_image_rotation> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <detector_to_image_rotation> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <downtrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <exposure_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_coadd_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_readout_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <filter_id> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_id> - The default maximum characters provided by the attribute's data type is being overridden with 16
+>>> INFO Attribute: <filter_name> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <first_line> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <first_sample> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <hdr_frame_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <hdr_clipping_threshold> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <height_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <icer_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <icer_quality> - The default maximum value provided by the attribute's data type is being overridden with 18
+>>> INFO Attribute: <interframe_delay> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <instrument_idle_timeout> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <line_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <line_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <observation_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default maximum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <onboard_compression_rate> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_ratio> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <onboard_compression_type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <onboard_compression_venue> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_venue> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <progressive_stage> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <horizon_mask_elevation> - The default minimum value provided by the attribute's data type is being overridden with -90.0
+>>> INFO Attribute: <horizon_mask_elevation> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <sample_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <sample_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <segment_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <segment_status> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <segment_status> - The default maximum characters provided by the attribute's data type is being overridden with 6
+>>> INFO Attribute: <special_line> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <special_sample> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default maximum value provided by the attribute's data type is being overridden with 8
+>>> INFO Attribute: <starpixel_degradation> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_degradation> - The default maximum value provided by the attribute's data type is being overridden with 32
+>>> INFO Attribute: <striping_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_overlap_rows> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_num_bands> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_number> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_line_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_sample_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <width_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_bayer_cell> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <crosstrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <decomposition_stages> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <detector_to_image_rotation> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <detector_to_image_rotation> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <downtrack_summing> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <exposure_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_coadd_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <exposure_readout_count> - The default minimum characters provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <filter_id> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_id> - The default maximum characters provided by the attribute's data type is being overridden with 16
+>>> INFO Attribute: <filter_name> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <filter_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <first_line> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <first_sample> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <hdr_frame_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <hdr_clipping_threshold> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <height_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <icer_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <icer_quality> - The default maximum value provided by the attribute's data type is being overridden with 18
+>>> INFO Attribute: <interframe_delay> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <instrument_idle_timeout> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <jpeg_quality> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <line_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <line_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <observation_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_quality> - The default maximum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <onboard_compression_rate> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <onboard_compression_ratio> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <onboard_compression_type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <onboard_compression_venue> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <onboard_compression_venue> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <progressive_stage> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <horizon_mask_elevation> - The default minimum value provided by the attribute's data type is being overridden with -90.0
+>>> INFO Attribute: <horizon_mask_elevation> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <sample_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <sample_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <segment_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <segment_status> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <segment_status> - The default maximum characters provided by the attribute's data type is being overridden with 6
+>>> INFO Attribute: <special_line> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <special_sample> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_initial_subsampling_interval> - The default maximum value provided by the attribute's data type is being overridden with 8
+>>> INFO Attribute: <starpixel_degradation> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <starpixel_degradation> - The default maximum value provided by the attribute's data type is being overridden with 32
+>>> INFO Attribute: <striping_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <striping_overlap_rows> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_count> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_lines> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_num_bands> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <tile_number> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <tile_samples> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_line_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <num_sample_tiles> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <width_pixels> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_bayer_cell> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <dq_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <instrument_serial_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> WARNING Init:  - Config.Properties Namespace Id Not Found:msss_cam_mh
+>>> WARNING Class: <Imaging> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Autoexposure> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Brightness_Correction> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Brightness_Correction_File> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Brightness_Correction_Image> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Brightness_Correction_HSI_Linear> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Brightness_Correction_Linear> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Color_Filter_Array> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Color_Processing> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Commanded_Parameters> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Companding> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Companding_File> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Companding_Table> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Companding_Table_Mapping> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Dark_Current_Correction> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Onboard_Compression> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Correction_Parameter> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Data_Processing> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Data_Processing_File> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Image_Mask> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Image_Mask_File> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Detector> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Component_States> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Component_State> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Currents> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Current> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Motor_Counts> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Motor_Count> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Parameters> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Temperatures> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Temperature> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Voltages> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Device_Voltage> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Downsampling> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Exposure> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Optical_Filter> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Flat_Field_Correction> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Flat_Field_File> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Focus> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Focus_Stack> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Frame> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <ICER_Parameters> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Illumination> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <LED_Illumination_Source> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Image_Compression_Segment> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Instrument_State> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <JPEG_Parameters> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <JPEG_Progressive_Parameters> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <List_Index_No_Units_Imaging> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <LOCO_Parameters> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Onboard_Color_Matrix> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Onboard_Responsivity> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Optical_Properties> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Pixel_Averaging_Dimensions> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Pointing_Correction> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Pointing_Correction_File> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Pointing_Correction_Image> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Pointing_Model_Parameter> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Radial_Flat_Field_Function> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Radiometric_Correction> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Reference_Pixel> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Histogram> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Col_Sum> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Row_Sum> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Sampling> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Shutter_Subtraction> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Special_Point> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <StarPixel_Lossless_Parameters> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <StarPixel_Flexible_Parameters> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Subframe> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Thumbnail> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Video> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Spatial_Filter> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Tile> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Tiling> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Image_Filter> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <High_Dynamic_Range> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <High_Dynamic_Range_Exposure> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Data_Quality> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Hot_Pixel> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Nonlinear_Pixel> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Saturated_Pixel> - The class name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <active_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <analog_offset> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <array_band_number> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_data_cut> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <max_auto_exposure_iteration_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_percent> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_pixel_fraction> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_lower_threshold> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_lower_limit> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_upper_threshold> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_upper_limit> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_roi_lines> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_roi_samples> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_roi_first_line> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <auto_exposure_roi_first_sample> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <autofocus_step_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <autofocus_step_size> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <bad_pixel_replacement_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <bad_pixel_replacement_table_id> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <bandwidth> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <best_focus_distance> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <brightness_scale> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <brightness_offset> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <center_filter_wavelength> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <color_component> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <color_dn_scaling_factor> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <color_dn_scaling_method> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <color_filter_array_state> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <color_filter_array_type> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <color_space> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <color_subsampling_mode> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <delta_focus_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <input_dn_max> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <input_dn_min> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <output_dn> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <companding_state> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <crosstrack_summing> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <current_value> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <decomposition_stages> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <deferred_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <detector_to_image_rotation> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <detector_to_image_flip> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <device_id> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <device_name> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <device_state> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <download_priority> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <downtrack_summing> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <early_image_return> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <early_scaling> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <effective_wavelength> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <encoded_display_gamma> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <erase_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <error_pixel_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_duration> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_duration_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_duration_threshold_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_scale_factor> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_table> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_coadd_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_readout_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_table_update_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_type> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_time_delta> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <filter_id> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <filter_name> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <filter_number> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <filter_position_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <filter_window_line> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <filter_window_sample> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <first_line> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <first_sample> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_merge_blending_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_merge_registration_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_mode> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_position> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_position_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_stack_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_initialization_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focal_length> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <f_number> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <frame_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <frame_id> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <frame_index> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <frame_interval> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <frame_rate> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <frame_type_name> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_distance> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <gain_mode_id> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <gain_number> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <gop_frame_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <gop_frame_index> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <gop_start_index> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <hdr_acquisition_mode> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <hdr_frame_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <hdr_clipping_threshold> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <height_pixels> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <icer_quality> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <id> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <illuminant> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <illumination_mode> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <illumination_wavelength> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <illumination_state> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <interframe_delay> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <instrument_idle_timeout> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <iof_conversion_coefficient> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <iof_conversion_coefficient_std> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <jpeg_parameter> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <jpeg_quality> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <lines> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <line_fov> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <maximum_focus_distance> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <minimum_focus_distance> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <missing_pixel_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <max_filter_window_line> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <max_filter_window_sample> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <min_filter_window_line> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <min_filter_window_sample> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <motor_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <observation_number> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_compression_class> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_compression_mode> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_compression_quality> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_compression_rate> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_compression_ratio> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_compression_type> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_compression_venue> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_R_r> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_R_g> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_R_b> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_B_r> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_B_g> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_B_b> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_G_r> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_G_g> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <onboard_G_b> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <original_sample_bits> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <parameter_table_id> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <pointing_model_name> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <pointing_model_solution_id> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <processing_algorithm> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <processing_venue> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <product_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <progressive_stage> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <mask_type> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <horizon_mask_elevation> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <mask_transparent_value> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <r0> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <r1> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <r2> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <r3> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <radiometric_zenith_scaling_factor> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <radiometric_type> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <raw_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <readout_rate> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <responsivity_factor_b> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <responsivity_factor_g> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <responsivity_factor_r> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <responsivity_b> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <responsivity_g> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <responsivity_pan> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <responsivity_r> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <responsivity_std> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <atmospheric_opacity> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <atmospheric_opacity_reference> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <samples> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <sample_bit_mask> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <sample_bits> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <sample_fov> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <sampling_factor> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <saturated_pixel_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <valid_pixel_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <sequence_number> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <segment_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <segment_number> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <segment_quality> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <segment_status> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <segment_corrupted_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <shutter_subtraction_mode> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <special_line> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <special_sample> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <starpixel_initial_subsampling_interval> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <starpixel_degradation> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <striping_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <striping_overlap_rows> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <subframe_type> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <temperature_status> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <temperature_value> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <tile_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <tile_lines> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <tile_num_bands> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <tile_number> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <tile_samples> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <tile_type> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <tile_upsample_method> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <tile_venue> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <num_line_tiles> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <num_sample_tiles> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <valid_maximum_pixel> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <valid_minimum_pixel> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <value_number> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <value_string> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <video_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <voltage_value> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <wavelet_filter> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <width_pixels> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <x_center> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <y_center> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <zoom_position> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <above_aft_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <below_aft_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <dq_bayer_cell> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <dq_band> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <full_well_limit_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <missing_temperature_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <no_signal_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <out_of_focus_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <pixel_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <saturated_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <sequence_terminated_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <threshold_factor> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <threshold_value> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <wrong_filter_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <wrong_pointing_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <wrong_zoom_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <zero_value_pixels_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <analog_offset> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <exposure_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_merge_blending_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <focus_merge_registration_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <color_component> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Attribute: <color_space> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Attribute: <frame_id> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <frame_interval> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <interframe_delay> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <processing_venue> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Attribute: <color_component> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Attribute: <color_space> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Attribute: <frame_id> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <frame_interval> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <interframe_delay> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <processing_venue> - An attribute with the enumeration_flag = false must not have any permissible values.
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <High_Dynamic_Range> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <High_Dynamic_Range> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+>>> WARNING Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+
+ -- LDDTool Execution Summary --
+     366 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1I00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - IM Version: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/dependencies/ldd-img/src/PDS4_IMG_IngestLDD.xml, /home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/dependencies/ldd-img/src/PDS4_IMG_IngestLDD.xml, /home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/PDS4_MSSS_CAM_MH_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_MSSS_CAM_MH_1I00_1030.xsd
+     - ./PDS4_MSSS_CAM_MH_1I00_1030.sch
+     - ./PDS4_MSSS_CAM_MH_1I00_1030.xml
+     - ./PDS4_MSSS_CAM_MH_1I00_1030.JSON
+
+>>  INFO Exit(0)
