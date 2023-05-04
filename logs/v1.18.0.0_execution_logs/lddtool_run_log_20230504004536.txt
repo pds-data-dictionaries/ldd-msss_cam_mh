@@ -1,13 +1,29 @@
 
->>  INFO LDDTOOL Version: 14.1.2
->>  INFO IM Version Id: 1.16.0.0
+>>  INFO LDDTOOL Version: 14.2.3
+>>  INFO IM Version Id: 1.18.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.22
->>  INFO Date: Thu Oct 20 21:53:43 UTC 2022
->>  INFO PARENT_DIR: /tmp/lddtool-14.1.2
->>  INFO SCRIPT_DIR: /tmp/lddtool-14.1.2/bin
->>  INFO LIB_DIR: /tmp/lddtool-14.1.2/lib
+>>  INFO IM Label Version Id: 1.24
+>>  INFO Date: Thu May 04 00:45:36 UTC 2023
+>>  INFO PARENT_DIR: /tmp/lddtool-14.2.3
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.2.3/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.2.3/lib
 
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Detector  Class:img.Detector - Missing Component Class
+>>> ERROR Association: img.Detector - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Exposure  Class:img.Exposure - Missing Component Class
+>>> ERROR Association: img.Exposure - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Focus  Class:img.Focus - Missing Component Class
+>>> ERROR Association: img.Focus - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Onboard_Compression  Class:img.Onboard_Compression - Missing Component Class
+>>> ERROR Association: img.Onboard_Compression - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Optical_Filter  Class:img.Optical_Filter - Missing Component Class
+>>> ERROR Association: img.Optical_Filter - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Sampling  Class:img.Sampling - Missing Component Class
+>>> ERROR Association: img.Sampling - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Subframe  Class:img.Subframe - Missing Component Class
+>>> ERROR Association: img.Subframe - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Instrument_State  Class:img.Instrument_State - Missing Component Class
+>>> ERROR Association: img.Instrument_State - Missing Component - Reference Type: component_of
 >>> INFO Init:  - Config.Properties Namespace Id Found:img
 >>> INFO Init:  - Config.Properties Namespace Id Using:img
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
@@ -798,24 +814,15 @@
 >>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
 >>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
 >>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
->>> WARNING Class: <Detector> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
->>> WARNING Class: <Exposure> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
->>> WARNING Class: <Focus> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
->>> WARNING Class: <Onboard_Compression> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
->>> WARNING Class: <Optical_Filter> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
->>> WARNING Class: <Sampling> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
->>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
->>> WARNING Class: <Subframe> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
->>> WARNING Class: <Instrument_State> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
 
  -- LDDTool Execution Summary --
-     366 warning(s)
-     0 error(s)
+     357 warning(s)
+     16 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1G00
+     - IM Version: 1I00
      - PDS4 Flag: true
      - LDD Flag: true
      - IM Version: true
@@ -825,9 +832,9 @@ Input:
 
 Output:
 
-     - ./PDS4_MSSS_CAM_MH_1G00_1030.xsd
-     - ./PDS4_MSSS_CAM_MH_1G00_1030.sch
-     - ./PDS4_MSSS_CAM_MH_1G00_1030.xml
-     - ./PDS4_MSSS_CAM_MH_1G00_1030.JSON
+     - ./PDS4_MSSS_CAM_MH_1I00_1030.xsd
+     - ./PDS4_MSSS_CAM_MH_1I00_1030.sch
+     - ./PDS4_MSSS_CAM_MH_1I00_1030.xml
+     - ./PDS4_MSSS_CAM_MH_1I00_1030.JSON
 
->>  INFO Exit(0)
+>>  INFO Exit(1)
