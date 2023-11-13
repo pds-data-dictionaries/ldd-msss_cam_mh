@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        14.2.4
+   LDDTool Version        14.3.0
    LDD Version Id:        1.0.3.0
    LDD Label Version Id:  1.20
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Mon May 08 14:28:14 UTC 2023
+   Time                   Thu Nov 02 23:33:02 UTC 2023
    Common Schema          [PDS4_PDS_1E00.xsd]
    Common Schematron      [PDS4_PDS_1E00.sch]
    IM Version Id:         1.14.0.0
@@ -577,9 +577,9 @@ Parsed Input - Attributes:
 
    name                   height_pixels
    version                1.14
-   value data type        ASCII_NonNegative_Integer
+   value data type        ASCII_Real
    description            The height_pixels attribute provides the vertical dimension, in pixels.
-   minimum value          1
+   minimum value          0
    unit of measure type   Units_of_Misc
 
    name                   icer_quality
@@ -1183,9 +1183,9 @@ Parsed Input - Attributes:
 
    name                   width_pixels
    version                1.14
-   value data type        ASCII_NonNegative_Integer
+   value data type        ASCII_Real
    description            The width_pixels attribute provides the horizontal dimension, in pixels.
-   minimum value          1
+   minimum value          0
    unit of measure type   Units_of_Misc
 
    name                   x_center
