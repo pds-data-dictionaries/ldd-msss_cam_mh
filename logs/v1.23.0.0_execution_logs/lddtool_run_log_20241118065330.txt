@@ -1,0 +1,65 @@
+
+>>  INFO LDDTOOL Version: 15.2.2
+>>  INFO IM Version Id: 1.23.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.0
+>>  INFO Date: Mon Nov 18 06:53:30 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-15.2.2/Data/
+
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Detector  Class:img.Detector - Missing Component Class
+>>> ERROR Association: img.Detector - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Exposure  Class:img.Exposure - Missing Component Class
+>>> ERROR Association: img.Exposure - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Focus  Class:img.Focus - Missing Component Class
+>>> ERROR Association: img.Focus - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Onboard_Compression  Class:img.Onboard_Compression - Missing Component Class
+>>> ERROR Association: img.Onboard_Compression - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Optical_Filter  Class:img.Optical_Filter - Missing Component Class
+>>> ERROR Association: img.Optical_Filter - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Sampling  Class:img.Sampling - Missing Component Class
+>>> ERROR Association: img.Sampling - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Subframe  Class:img.Subframe - Missing Component Class
+>>> ERROR Association: img.Subframe - Missing Component - Reference Type: component_of
+>>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Instrument_State  Class:img.Instrument_State - Missing Component Class
+>>> ERROR Association: img.Instrument_State - Missing Component - Reference Type: component_of
+>>> INFO Init:  - Config.Properties Namespace Id Found:img
+>>> INFO Init:  - Config.Properties Namespace Id Using:img
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Init:  - Config.Properties Namespace Id Using:pds
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <spacecraft_clock_start> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <spacecraft_clock_stop> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <instrument_serial_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <instrument_serial_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_start> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_start> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <spacecraft_clock_stop> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <spacecraft_clock_stop> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> WARNING Init:  - Config.Properties Namespace Id Not Found:msss_cam_mh
+
+ -- LDDTool Execution Summary --
+     1 warning(s)
+     16 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1N00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/dependencies/ldd-img/src/PDS4_IMG_IngestLDD.xml, /home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/PDS4_MSSS_CAM_MH_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_MSSS_CAM_MH_1N00_1030.xsd
+     - ./PDS4_MSSS_CAM_MH_1N00_1030.sch
+     - ./PDS4_MSSS_CAM_MH_1N00_1030.xml
+     - ./export/PDS4_PDS_1N00.JSON
+
+>>  INFO Exit(0)
