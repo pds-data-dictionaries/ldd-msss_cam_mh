@@ -1,10 +1,10 @@
 
->>  INFO LDDTOOL Version: 15.2.2
->>  INFO IM Version Id: 1.23.0.0
+>>  INFO LDDTOOL Version: 15.2.4
+>>  INFO IM Version Id: 1.20.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.0
->>  INFO Date: Mon Nov 18 19:18:42 UTC 2024
->>  INFO PARENT_DIR: /tmp/lddtool-15.2.2/Data/
+>>  INFO IM Label Version Id: 1.26
+>>  INFO Date: Mon Apr 28 18:38:50 UTC 2025
+>>  INFO PARENT_DIR: /tmp/lddtool-15.2.4/Data/
 
 >>> ERROR Class:0001_NASA_PDS_1.msss_cam_mh.MSSS_Camera_Mini_Header  Association:img.Detector  Class:img.Detector - Missing Component Class
 >>> ERROR Association: img.Detector - Missing Component - Reference Type: component_of
@@ -48,18 +48,19 @@
 
 Input:
 
-     - IM Version: 1N00
+     - IM Version: 1K00
      - PDS4 Flag: true
      - LDD Flag: true
+     - IM Version: true
      - Export JSON Flag: true
 
      - Ingest LDD(s): /home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/dependencies/ldd-img/src/PDS4_IMG_IngestLDD.xml, /home/runner/work/ldd-msss_cam_mh/ldd-msss_cam_mh/src/PDS4_MSSS_CAM_MH_IngestLDD.xml
 
 Output:
 
-     - ./PDS4_MSSS_CAM_MH_1N00_1030.xsd
-     - ./PDS4_MSSS_CAM_MH_1N00_1030.sch
-     - ./PDS4_MSSS_CAM_MH_1N00_1030.xml
-     - ./export/PDS4_PDS_1N00.JSON
+     - ./PDS4_MSSS_CAM_MH_1K00_1030.xsd
+     - ./PDS4_MSSS_CAM_MH_1K00_1030.sch
+     - ./PDS4_MSSS_CAM_MH_1K00_1030.xml
+     - ./export/PDS4_PDS_1K00.JSON
 
 >>  INFO Exit(0)

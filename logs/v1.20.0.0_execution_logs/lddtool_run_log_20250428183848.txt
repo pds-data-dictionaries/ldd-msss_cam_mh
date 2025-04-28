@@ -1,10 +1,10 @@
 
->>  INFO LDDTOOL Version: 15.2.2
->>  INFO IM Version Id: 1.19.0.0
+>>  INFO LDDTOOL Version: 15.2.4
+>>  INFO IM Version Id: 1.20.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.25
->>  INFO Date: Mon Nov 18 19:18:40 UTC 2024
->>  INFO PARENT_DIR: /tmp/lddtool-15.2.2/Data/
+>>  INFO IM Label Version Id: 1.26
+>>  INFO Date: Mon Apr 28 18:38:48 UTC 2025
+>>  INFO PARENT_DIR: /tmp/lddtool-15.2.4/Data/
 
 >>> INFO Init:  - Config.Properties Namespace Id Found:img
 >>> INFO Init:  - Config.Properties Namespace Id Using:img
@@ -58,6 +58,9 @@
 >>> INFO Attribute: <progressive_stage> - The default minimum value provided by the attribute's data type is being overridden with 0
 >>> INFO Attribute: <horizon_mask_elevation> - The default minimum value provided by the attribute's data type is being overridden with -90.0
 >>> INFO Attribute: <horizon_mask_elevation> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <pixel_readout_time> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <line_readout_time> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <frame_readout_time> - The default minimum value provided by the attribute's data type is being overridden with 0
 >>> INFO Attribute: <samples> - The default minimum value provided by the attribute's data type is being overridden with 1
 >>> INFO Attribute: <sample_fov> - The default minimum value provided by the attribute's data type is being overridden with 0.0
 >>> INFO Attribute: <sample_fov> - The default maximum value provided by the attribute's data type is being overridden with 360.0
@@ -89,6 +92,7 @@
 >>> WARNING Attribute: <color_space> - An attribute with the enumeration_flag = false must not have any permissible values.
 >>> WARNING Attribute: <frame_id> - An attribute with the enumeration_flag = true must have at least one permissible value.
 >>> WARNING Attribute: <frame_interval> - An attribute with the enumeration_flag = true must have at least one permissible value.
+>>> WARNING Attribute: <image_corrupt_flag> - An attribute with the enumeration_flag = true must have at least one permissible value.
 >>> WARNING Attribute: <interframe_delay> - An attribute with the enumeration_flag = true must have at least one permissible value.
 >>> WARNING Attribute: <processing_venue> - An attribute with the enumeration_flag = false must not have any permissible values.
 >>> WARNING Class: <ISO> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
@@ -128,13 +132,13 @@
 >>> WARNING Class: <Companding> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
 
  -- LDDTool Execution Summary --
-     41 warning(s)
+     42 warning(s)
      0 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1J00
+     - IM Version: 1K00
      - PDS4 Flag: true
      - LDD Flag: true
      - IM Version: true
@@ -144,9 +148,9 @@ Input:
 
 Output:
 
-     - ./PDS4_IMG_1J00_1900.xsd
-     - ./PDS4_IMG_1J00_1900.sch
-     - ./PDS4_IMG_1J00_1900.xml
-     - ./export/PDS4_PDS_1J00.JSON
+     - ./PDS4_IMG_1K00_1920.xsd
+     - ./PDS4_IMG_1K00_1920.sch
+     - ./PDS4_IMG_1K00_1920.xml
+     - ./export/PDS4_PDS_1K00.JSON
 
 >>  INFO Exit(0)
