@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        16.1.0
+   LDDTool Version        16.3.2
    LDD Version Id:        1.0.3.0
    LDD Label Version Id:  1.26
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Fri Apr 24 16:51:14 UTC 2026
+   Time                   Thu Nov 19 22:37:38 UTC 2026
    Common Schema          [PDS4_PDS_1K00.xsd]
    Common Schematron      [PDS4_PDS_1K00.sch]
    IM Version Id:         1.20.0.0
@@ -28,9 +28,9 @@ Parameters:
    Merge with Master      false
 
 Summary:
-   Classes                89
-   Attributes             276
-   Associations           521
+   Classes                98
+   Attributes             315
+   Associations           583
    Error messages         0
    Warning messages       0
    Information messages   0
@@ -95,10 +95,20 @@ Parsed Input - Attributes:
    description            Specifies the analog voltage value that is subtracted from the signal prior to the analog/digital conversion.
    unit of measure type   Units_of_Voltage
 
+   name                   aperture_value
+   version                1.20
+   value data type        ASCII_Real
+   description            Represents the lens aperture using the APEX system (Additive System of Photographic Exposure), not as a direct F-number. It measures the lens opening in powers of 2 (stops) to indicate how many stops from f/1 the aperture is set.
+
    name                   array_band_number
    version                1.20
    value data type        ASCII_NonNegative_Integer
-   description            The array_band_number is the image plane (band) in the array that corresponds to the optical filter with which the image was acquired.
+   description            The array_band_number is the image plane (band) in the image array that corresponds to the information in the enclosing class (such as, the optical filter with which the band was acquired or the radiometric correction parameters for that band). If not specified, the information applies to all bands.
+
+   name                   artifact_flag
+   version                1.20
+   value data type        ASCII_Boolean
+   description             A boolean value that indicates whether this image has identified artifacts. 
 
    name                   atmospheric_opacity
    version                1.20
@@ -230,6 +240,16 @@ Parsed Input - Attributes:
    description            The best_focus_distance attribute specifies the estimated distance to best focus.
    unit of measure type   Units_of_Length
 
+   name                   blue_dn
+   version                1.20
+   value data type        ASCII_Integer
+   description            Blue pixel value in DN
+
+   name                   blue_to_green_balance
+   version                1.20
+   value data type        ASCII_Real
+   description            Specifies the blue gain levels, relative to green (as a ratio), for white balance. Often related to color temperature.
+
    name                   brightness_offset
    version                1.20
    value data type        ASCII_Real
@@ -249,6 +269,17 @@ Parsed Input - Attributes:
    version                1.20
    value data type        ASCII_Real
    description            The center_filter_wavelength attribute provides the wavelength of the center of the passband, or the peak transmissivity, for an instrument filter. 
+   unit of measure type   Units_of_Length
+
+   name                   chrominance_positioning
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Defines the position of color (chrominance) samples relative to brightness (luminance) samples. 
+
+   name                   circle_of_confusion
+   version                1.20
+   value data type        ASCII_Real
+   description            Defines the maximum diameter of a blur spot on a camera sensor that the human eye till perceives as a sharp point. It is sometimes called blur spot and factors in to the camera's depth of field. 
    unit of measure type   Units_of_Length
 
    name                   color_component
@@ -291,6 +322,11 @@ Parsed Input - Attributes:
    value data type        ASCII_Short_String_Collapsed
    description            The companding_state attribute specifies whether the data is or has had its bit depth reduced, for example conversion from 12 to 8 bits via a lookup table or bit scaling. Valid values: None - values have not been companded. Companded - values are currently companded. Expanded - values have been companded but are now expanded back to original size.
 
+   name                   contrast
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Indicates the contrast setting when the image was captured.
+
    name                   crosstrack_summing
    version                1.20
    value data type        ASCII_NonNegative_Integer
@@ -325,6 +361,12 @@ Parsed Input - Attributes:
    value data type        ASCII_NonNegative_Integer
    description            Defines the amount of change in focus for each image in the z-stack. The units should be the same as focus_position_count, which is often motor counts.
 
+   name                   depth_of_field
+   version                1.20
+   value data type        ASCII_Real
+   description            Distance between the nearest and farthest objects that are in accceptably sharp focus.
+   unit of measure type   Units_of_Length
+
    name                   detector_to_image_flip
    version                1.20
    value data type        ASCII_Short_String_Collapsed
@@ -353,6 +395,18 @@ Parsed Input - Attributes:
    version                1.20
    value data type        ASCII_Short_String_Collapsed
    description            The device_state attribute indicates the state of a sensor or other device associated with the imaging instrument. These states are interpreted in an instrument-specific way.
+
+   name                   diagonal_fov
+   version                1.20
+   value data type        ASCII_Real
+   description            The angular field of view measured diagonally across the image.
+   unit of measure type   Units_of_Angle
+
+   name                   diagonal_fov_length
+   version                1.20
+   value data type        ASCII_Real
+   description            The diagonal field of view expressed as a distance or size at the best_focus distance.
+   unit of measure type   Units_of_Length
 
    name                   download_priority
    version                1.20
@@ -415,6 +469,11 @@ Parsed Input - Attributes:
    description            Specifies the total number of exposures summed (co-added) together to obtain the final image. Co-adding increases the signal-to-noise ratio.
    minimum characters     0
 
+   name                   exposure_compensation
+   version                1.20
+   value data type        ASCII_Real
+   description            Documents any intentional +/- adjustments made to the camera's automatic exposure, measured in Exposue Value (EV) steps (commonly called "stops").
+
    name                   exposure_count
    version                1.20
    value data type        ASCII_NonNegative_Integer
@@ -437,6 +496,11 @@ Parsed Input - Attributes:
    version                1.20
    value data type        ASCII_Real
    description            The exposure_duration_threshold specifies the exposure time threshold in raw counts, when shutter_subtraction_mode = 'Conditional'.
+
+   name                   exposure_index
+   version                1.20
+   value data type        ASCII_Real
+   description            Exposure Index as defined by ISO 12232:2019.
 
    name                   exposure_readout_count
    version                1.20
@@ -471,11 +535,16 @@ Parsed Input - Attributes:
    value data type        ASCII_Short_String_Collapsed
    description            The exposure_type attribute indicates the exposure setting on a camera. Valid values: 'Manual' - manual exposure setting, 'Auto' - autoexposure is applied by the camera, 'Test' - test exposure setting telling the camera to return a fixed-pattern test image.
 
+   name                   exposure_value
+   version                1.20
+   value data type        ASCII_Real
+   description            Exposure Value (Ev) is a combination of a camera's shutter speed and f-number, such that all combinations that yield the same exposure have the same Ev for a fixed scene luminance. It also is used to indicate an interval on the photographic exposure scale, with a difference of 1 Ev corresponding to a standard power-of-2 exposure step, commonly called a stop.
+   minimum value          0
+
    name                   f_number
    version                1.20
    value data type        ASCII_Real
    description            Defines the f/number for the optics used in acquiring the image.
-   unit of measure type   Units_of_Length
 
    name                   filter_id
    version                1.20
@@ -625,6 +694,11 @@ Parsed Input - Attributes:
    value data type        ASCII_Boolean
    description            A boolean value that denotes we have reached/exceeded the full well value of the CCD detector. 
 
+   name                   gain_control
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Indicates the degree of overall image gain adjustment applied by the camera.
+
    name                   gain_count
    version                1.20
    value data type        ASCII_Real
@@ -660,6 +734,21 @@ Parsed Input - Attributes:
    value data type        ASCII_NonNegative_Integer
    description            Videos can be broken into Groups of Pictures (GOP)s, which group a number of frames together. The gop_start_index attribute specifies the index of the first frame of the GOP (starting at 1). Thus, frame_index = gop_start_index + gop_frame_index - 1.
 
+   name                   green1_dn
+   version                1.20
+   value data type        ASCII_Integer
+   description            First green pixel value in a Bayer-pattern DN
+
+   name                   green2_dn
+   version                1.20
+   value data type        ASCII_Integer
+   description            Second green pixel value in a Bayer-pattern DN
+
+   name                   green_dn
+   version                1.20
+   value data type        ASCII_Integer
+   description            Green pixel value in DN
+
    name                   hdr_acquisition_mode
    version                1.20
    value data type        ASCII_Short_String_Collapsed
@@ -691,6 +780,17 @@ Parsed Input - Attributes:
    minimum value          -90.0
    maximum value          90.0
    unit of measure type   Units_of_Angle
+
+   name                   hyperfocal_distance
+   version                1.20
+   value data type        ASCII_Real
+   description            Distance from a lens beyond which all objects can be brought into an acceptable focus. It is the focus distance with the maximum depth of field.
+   unit of measure type   Units_of_Length
+
+   name                   icc_profile_name
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Identifies the name of the ICC (International Color Consortium) color space/profile embedded in the image.
 
    name                   icer_quality
    version                1.20
@@ -785,6 +885,11 @@ Parsed Input - Attributes:
    value data type        ASCII_Real
    description            Specifies the ISO level set for the camera. ISO Sensitivity is a standard set by the International Organization for Standardization (ISO) that represents sensitivity to light as a numerical value as it pertains to either film or a digital sensor. A lower ISO value means less sensitivity to light, while a higher ISO means more sensitivity. The most common ISO values are 100, 200, 400, 800, 1600, and 3000. The lowest ISO setting or base ISO is typically 100, although some cameras go as low as 50 or even 25. Some older cameras will start at ISO 200. This should generally conform to ISO 12232:2019
 
+   name                   iso_speed
+   version                1.20
+   value data type        ASCII_Real
+   description            ISO Speed as defined by ISO_12232:2019. Note that this attribute strictly adheres to ISO 12232 whereas iso_number can be more loosely defined. Use iso_number if strict adherence to the ISO standard is not clear. Both may be used.
+
    name                   jpeg_parameter
    version                1.20
    value data type        ASCII_Integer
@@ -801,6 +906,21 @@ Parsed Input - Attributes:
    version                1.20
    value data type        ASCII_Real
    description            The kurtosis in the area of interest.
+
+   name                   lens_description
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Description of the lens used.
+
+   name                   lens_name
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Name of the lens used.
+
+   name                   light_value
+   version                1.20
+   value data type        ASCII_Real
+   description            Light Value is the exposure value (EV) normalised to ISO 100.
 
    name                   line_fov
    version                1.20
@@ -832,6 +952,11 @@ Parsed Input - Attributes:
    version                1.20
    value data type        ASCII_Short_String_Collapsed
    description            This identifies the type of mask file. Two enumerations are given, but these can be expanded if needed.
+
+   name                   max_aperture_value
+   version                1.20
+   value data type        ASCII_Real
+   description            Smallest f-number (widest aperture) a lens can achieve.
 
    name                   max_auto_exposure_iteration_count
    version                1.20
@@ -869,10 +994,21 @@ Parsed Input - Attributes:
    value data type        ASCII_Real
    description            The median pixel value in the area of interest.
 
+   name                   megapixels
+   version                1.20
+   value data type        ASCII_Real
+   description            Specifies the size of the detector in megapixels. This is not intended to be a precise measurement but rather indicates the general size or class of the detector.
+   minimum value          1
+
    name                   metadata_corrupt_flag
    version                1.20
    value data type        ASCII_Boolean
    description            Indicates whether or not the metadata for this image was corrupted after it was acquired (i.e. it was corrupted somewhere downstream not part of acquisition). Valid values are "true", "false". 
+
+   name                   metering_mode
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Indicates which part of the frame was used to measure brightness for the autoexposure algorithm.
 
    name                   min_filter_window_line
    version                1.20
@@ -1010,7 +1146,7 @@ Parsed Input - Attributes:
    name                   onboard_compression_type
    version                1.20
    value data type        ASCII_Short_String_Collapsed
-   description            The onboard_compression_type attribute identifies the type of on-board compression used for data storage and transmission. Valid Values: 'GZIP', 'ICER', 'H.264 Frame', 'LOCO', 'LZO', 'JPEG', 'JPEG Progressive', 'MSSS Lossless', 'Lossless', 'None', 'StarPixel Lossless', 'StarPixel Flexible', and 'Wavelet'.
+   description            The onboard_compression_type attribute identifies the type of on-board compression used for data storage and transmission. Valid Values: 'GZIP', 'ICER', 'H.264 Frame', 'LOCO', 'LZO', 'JPEG', 'JPEG Progressive', 'MSSS Lossless', 'Lossless', 'None', 'Rice', 'StarPixel Lossless', 'StarPixel Flexible', and 'Wavelet'.
    minimum characters     1
    maximum characters     255
 
@@ -1123,7 +1259,7 @@ Parsed Input - Attributes:
 
    name                   raw_count
    version                1.20
-   value data type        ASCII_NonNegative_Integer
+   value data type        ASCII_Integer
    description            The raw_count attribute provides the value of some parameter measured by a spacecraft or instrument sensor in the raw units reported by that sensor. A separate attribute should be included alongside the raw_count that translates this value into the appropriate engineering units. i.e. temperature_value in degrees C or voltage_value in Volts
 
    name                   readout_direction_line
@@ -1141,6 +1277,21 @@ Parsed Input - Attributes:
    value data type        ASCII_Real
    description            The readout_rate attribute specifies the clock rate at which values are read from the sensor.
    unit of measure type   Units_of_Frequency
+
+   name                   recommended_exposure_index
+   version                1.20
+   value data type        ASCII_Real
+   description            Recommended Exposure Index as defined by ISO 12232:2019.
+
+   name                   red_dn
+   version                1.20
+   value data type        ASCII_Integer
+   description            Red pixel value in DN
+
+   name                   red_to_green_balance
+   version                1.20
+   value data type        ASCII_Real
+   description            Specifies the red gain levels, relative to green (as a ratio), for white balance. Often related to color temperature.
 
    name                   relative_to
    version                1.20
@@ -1231,6 +1382,16 @@ Parsed Input - Attributes:
    value data type        ASCII_NonNegative_Integer
    description            The saturated_pixel_count attribute provides the number of pixels which were saturated. This can happen when the sensor acquired a value too low or too high to be measured accurately or if post-processing cause the output pixel value to fall below or above the the output range of valid values for the data or data type.
 
+   name                   saturation
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Indicates the level of color intensity enhancement applied by the camera during image capture.
+
+   name                   scene_capture_type
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Indicates the orientation of the camera.
+
    name                   segment_corrupted_flag
    version                1.20
    value data type        ASCII_Boolean
@@ -1259,6 +1420,16 @@ Parsed Input - Attributes:
    minimum characters     1
    maximum characters     6
 
+   name                   sensing_method
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Specifies the image sensor type.
+
+   name                   sensitivity_type
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Specifies which ISO 12232:2019 parameters are used.
+
    name                   sequence_number
    version                1.20
    value data type        ASCII_Short_String_Collapsed
@@ -1268,6 +1439,11 @@ Parsed Input - Attributes:
    version                1.20
    value data type        ASCII_Boolean
    description            A boolean value that denotes that there exists pixels within the image that have reached or exceeded the maximum pixel value. 
+
+   name                   sharpness
+   version                1.20
+   value data type        ASCII_Short_String_Collapsed
+   description            Indicates the in-camera processing applied to edges in the image. This is a property of the camera software, not optical sharpness of the lens or focus accuracy.
 
    name                   shutter_subtraction_mode
    version                1.20
@@ -1300,6 +1476,11 @@ Parsed Input - Attributes:
    version                1.20
    value data type        ASCII_Real
    description            The standard deviation in the area of interest.
+
+   name                   standard_output_sensitivity
+   version                1.20
+   value data type        ASCII_Real
+   description            Standard Output Sensitivity value as defined by ISO 12232:2019.
 
    name                   starpixel_degradation
    version                1.20
@@ -1347,7 +1528,12 @@ Parsed Input - Attributes:
    name                   threshold_factor
    version                1.20
    value data type        ASCII_Real
-   description            Multiplicative factor used to isolate pixels that are X times greater than theie nearest neighbors. 
+   description            Multiplicative factor used to isolate pixels that are X times greater than their nearest neighbors. 
+
+   name                   threshold_pixel
+   version                1.20
+   value data type        ASCII_Real
+   description            Value used to define a level that triggers a defined behavior. This is a pixel value expressed in the same units as the pixels themselves in the image array.
 
    name                   threshold_value
    version                1.20
@@ -1479,6 +1665,21 @@ Parsed Input - Attributes:
    value data type        ASCII_Real
    description            The x_center attribute specifies the sample coordinate of the center of the function used to describe an algorithmic flat field. See Radial_Flat_Field_Function for the formula.
    unit of measure type   Units_of_Misc
+
+   name                   xyy_luminance
+   version                1.20
+   value data type        ASCII_Real
+   description            Specifies the luminance or capital-Y coordinate of a color in xyY color space
+
+   name                   xyy_x
+   version                1.20
+   value data type        ASCII_Real
+   description            Specifies the x coordinate of a color in xyY color space
+
+   name                   xyy_y
+   version                1.20
+   value data type        ASCII_Real
+   description            Specifies the y coordinate of a color in xyY color space
 
    name                   y_center
    version                1.20
@@ -1677,10 +1878,43 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:exposure_compensation
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:metering_mode
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
       local identifier      img:Data_Processing
       minimum occurrences   1
       maximum occurrences   1
       reference type        parent_of
+
+   name                   Black_Reference_Point
+   description            Black reference point of camera
+   is abstract            false
+   is choice              true
+   subclass of            USER
+
+   Associations
+
+      local identifier      img:Color_sRGB
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img:Color_xyY
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img:Color_Bayer
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
 
    name                   Brightness_Correction
    description            The Brightness_Correction class describes brightness corrections that were applied to an image or mosaic. Brightness correction is the process of adjusting the DN values of adjacent frames in a mosaic so they match visually. It may also involve contrast or vignetting adjustments. The result may no longer be radiometrically calibrated due to the adjustments. The processing_algorithm child of Brightness_Correction describes the type of brightness correction, and should correspond to the classes within Brightness_Correction_Image. If the algorithm is "MIXED", multiple algorithms were used, in which case the specific information in each Brightness_Correction_Image must be used.
@@ -1808,6 +2042,57 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        parent_of
 
+   name                   Camera_Settings
+   description            Specifies the camera settings, often used for handheld/human-operated cameras. The attributes generally correspond to EXIF tags and are often qualitative rather than quantitative.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      img:contrast
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:gain_control
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:saturation
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:scene_capture_type
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:sharpness
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+   name                   Chromaticity_Coordinate
+   description            Specifies a color using one of several color spaces
+   is abstract            false
+   is choice              true
+   subclass of            USER
+
+   Associations
+
+      local identifier      img:Color_sRGB
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img:Color_xyY
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
    name                   Col_Sum
    description            Describes a Column Summation product, which is a single row containing the sum of all pixels in each column of the image.
    is abstract            false
@@ -1823,6 +2108,34 @@ Parsed Input - Classes:
 
       local identifier      img:product_flag
       minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+   name                   Color_Bayer
+   description            Specifies a color expressed in terms of Bayer color components (R/G1/G2/B)
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      img:red_dn
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:green1_dn
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:green2_dn
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:blue_dn
+      minimum occurrences   1
       maximum occurrences   1
       reference type        attribute_of
 
@@ -1887,6 +2200,11 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:icc_profile_name
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
       local identifier      img:Onboard_Responsivity
       minimum occurrences   0
       maximum occurrences   1
@@ -1897,10 +2215,66 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        component_of
 
+      local identifier      img:Black_Reference_Point
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img:White_Reference_Point
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
       local identifier      img:Data_Processing
       minimum occurrences   1
       maximum occurrences   1
       reference type        parent_of
+
+   name                   Color_sRGB
+   description            Specifies a color expressed in standard RGB color space
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      img:red_dn
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:green_dn
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:blue_dn
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+   name                   Color_xyY
+   description            Specifies a color expressed in xyY color space
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      img:xyy_x
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:xyy_y
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:xyy_luminance
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
 
    name                   Commanded_Parameters
    description            The Commanded_Parameters class contains attributes used to identify or describe the commands sent to a spacecraft to perform one or more actions resulting in the acquisition of the current data product. These are distinct from similar values in the root Imaging class which indicate the state of the image as acquired.
@@ -2007,7 +2381,7 @@ Parsed Input - Classes:
 
       local identifier      img:Image_Mask
       minimum occurrences   0
-      maximum occurrences   1
+      maximum occurrences   *
       reference type        component_of
 
       local identifier      img:Onboard_Compression
@@ -2032,7 +2406,7 @@ Parsed Input - Classes:
 
       local identifier      img:Radiometric_Correction
       minimum occurrences   0
-      maximum occurrences   1
+      maximum occurrences   *
       reference type        component_of
 
       local identifier      img:Reference_Pixel
@@ -2086,6 +2460,11 @@ Parsed Input - Classes:
       reference type        component_of
 
       local identifier      img:White_Balance
+      minimum occurrences   0
+      maximum occurrences   *
+      reference type        component_of
+
+      local identifier      img:Camera_Settings
       minimum occurrences   0
       maximum occurrences   *
       reference type        component_of
@@ -2208,8 +2587,26 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:Dark_Current_File
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
       local identifier      img:Data_Processing
       minimum occurrences   0
+      maximum occurrences   1
+      reference type        parent_of
+
+   name                   Dark_Current_File
+   description            The Dark_Current_File class specifies an image or other file used for dark current correction. 
+   is abstract            false
+   is choice              false
+   subclass of            Data_Processing_File
+
+   Associations
+
+      local identifier      img:Data_Processing_File
+      minimum occurrences   1
       maximum occurrences   1
       reference type        parent_of
 
@@ -2281,6 +2678,11 @@ Parsed Input - Classes:
    subclass of            USER
 
    Associations
+
+      local identifier      img:array_band_number
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
 
       local identifier      img:dq_band
       minimum occurrences   0
@@ -2372,6 +2774,11 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:artifact_flag
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
       local identifier      img:Hot_Pixel
       minimum occurrences   0
       maximum occurrences   1
@@ -2406,6 +2813,11 @@ Parsed Input - Classes:
       reference type        attribute_of
 
       local identifier      img:lines
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:megapixels
       minimum occurrences   0
       maximum occurrences   1
       reference type        attribute_of
@@ -2505,6 +2917,11 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:sensing_method
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
       local identifier      img:ISO
       minimum occurrences   0
       maximum occurrences   1
@@ -2516,6 +2933,11 @@ Parsed Input - Classes:
       reference type        component_of
 
       local identifier      img:Shutter
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      pds.Internal_Reference
       minimum occurrences   0
       maximum occurrences   1
       reference type        component_of
@@ -2774,6 +3196,16 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:light_value
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:exposure_value
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
       local identifier      img:Autoexposure
       minimum occurrences   0
       maximum occurrences   1
@@ -2803,7 +3235,7 @@ Parsed Input - Classes:
       reference type        parent_of
 
    name                   Flat_Field_File
-   description            The Flat_Field_File class specifies the image used for flat field correction. The image is divided by this flat field image in order to apply the flat field correction (which is the opposite of Radial_Flat_Field_Function). 
+   description            The Flat_Field_File class specifies an image or other file used for flat field correction. Typically the image is divided by this flat field image in order to apply the flat field correction (which is the opposite of Radial_Flat_Field_Function), although other types of flat field files may be specified. 
    is abstract            false
    is choice              false
    subclass of            Data_Processing_File
@@ -2869,6 +3301,31 @@ Parsed Input - Classes:
       reference type        attribute_of
 
       local identifier      img:maximum_focus_distance
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:circle_of_confusion
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:depth_of_field
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:diagonal_fov
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:diagonal_fov_length
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:hyperfocal_distance
       minimum occurrences   0
       maximum occurrences   1
       reference type        attribute_of
@@ -3041,6 +3498,11 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:threshold_pixel
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
    name                   ICER_Parameters
    description             The ICER_Parameters class contains attributes describing onboard compression parameters specific to Joint Photographic Experts Group (JPEG) image compression. ICER is a wavelet-based image compression file format used by the NASA Mars Rovers. ICER has both lossy and lossless compression modes.
    is abstract            false
@@ -3088,6 +3550,31 @@ Parsed Input - Classes:
       reference type        attribute_of
 
       local identifier      img:iso_mode_id
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:iso_speed
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:recommended_exposure_index
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:sensitivity_type
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:standard_output_sensitivity
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:exposure_index
       minimum occurrences   0
       maximum occurrences   1
       reference type        attribute_of
@@ -3382,7 +3869,7 @@ Parsed Input - Classes:
 
       local identifier      img:Image_Mask
       minimum occurrences   0
-      maximum occurrences   1
+      maximum occurrences   *
       reference type        component_of
 
       local identifier      img:Onboard_Compression
@@ -3407,7 +3894,7 @@ Parsed Input - Classes:
 
       local identifier      img:Radiometric_Correction
       minimum occurrences   0
-      maximum occurrences   1
+      maximum occurrences   *
       reference type        component_of
 
       local identifier      img:Reference_Pixel
@@ -3461,6 +3948,11 @@ Parsed Input - Classes:
       reference type        component_of
 
       local identifier      img:White_Balance
+      minimum occurrences   0
+      maximum occurrences   *
+      reference type        component_of
+
+      local identifier      img:Camera_Settings
       minimum occurrences   0
       maximum occurrences   *
       reference type        component_of
@@ -3527,6 +4019,11 @@ Parsed Input - Classes:
       reference type        attribute_of
 
       local identifier      img:jpeg_parameter
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:chrominance_positioning
       minimum occurrences   0
       maximum occurrences   1
       reference type        attribute_of
@@ -3652,6 +4149,11 @@ Parsed Input - Classes:
    Associations
 
       local identifier      img:pixel_count
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:threshold_pixel
       minimum occurrences   0
       maximum occurrences   1
       reference type        attribute_of
@@ -3901,6 +4403,26 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:lens_description
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:lens_name
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:max_aperture_value
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:aperture_value
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
    name                   Pixel_Averaging_Dimensions
    description            The Pixel_Averaging_Dimensions class provides the height and width, in pixels, of the area over which pixels were averaged prior to image compression.
    is abstract            false
@@ -4042,6 +4564,11 @@ Parsed Input - Classes:
 
    Associations
 
+      local identifier      img:array_band_number
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
       local identifier      img:radiometric_type
       minimum occurrences   0
       maximum occurrences   1
@@ -4117,7 +4644,25 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:Radiometric_Correction_File
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
       local identifier      img:Data_Processing
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        parent_of
+
+   name                   Radiometric_Correction_File
+   description            The Radiometric_Correction class specifies an image or other file used for radiometric correction. 
+   is abstract            false
+   is choice              false
+   subclass of            Data_Processing_File
+
+   Associations
+
+      local identifier      img:Data_Processing_File
       minimum occurrences   1
       maximum occurrences   1
       reference type        parent_of
@@ -4230,6 +4775,11 @@ Parsed Input - Classes:
    Associations
 
       local identifier      img:pixel_count
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:threshold_pixel
       minimum occurrences   0
       maximum occurrences   1
       reference type        attribute_of
@@ -4768,10 +5318,43 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
+      local identifier      img:red_to_green_balance
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      img:blue_to_green_balance
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
       local identifier      img:Data_Processing
       minimum occurrences   1
       maximum occurrences   1
       reference type        parent_of
+
+   name                   White_Reference_Point
+   description            White reference point of camera
+   is abstract            false
+   is choice              true
+   subclass of            USER
+
+   Associations
+
+      local identifier      img:Color_sRGB
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img:Color_xyY
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      img:Color_Bayer
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
 
    name                   MSSS_Camera_Mini_Header
    description            The MSSS_Camera_Mini_Header class contains information for cameras developed by Malin Space Science Systems (MSSS) that share a common architecture or digital electronics assembly. Example cameras include Mastcam, MAHLI, MARDI, Mastcam-Z, SHERLOC-Watson and SHERLOC-ACI.
